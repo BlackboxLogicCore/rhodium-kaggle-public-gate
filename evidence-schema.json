@@ -1,0 +1,11 @@
+﻿{
+  "schema_version": "RHODIUM_PUBLIC_EVIDENCE_V1",
+  "required": [
+    "test_id",
+    "input_sha256",
+    "restored_sha256",
+    "bit_identical",
+    "p0_pass",
+    "status"
+  ]
+}

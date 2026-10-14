@@ -1,0 +1,5 @@
+﻿README.md
+PUBLIC-DISCLOSURE-POLICY.md
+evidence-schema.json
+verify_public_evidence.py
+ALLOWLIST.txt
