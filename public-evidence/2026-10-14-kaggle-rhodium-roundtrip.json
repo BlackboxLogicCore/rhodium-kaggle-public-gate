@@ -1,0 +1,29 @@
+{
+  "schema": "RHODIUM_PUBLIC_BENCHMARK_EVIDENCE_V1",
+  "project": "Rhodium Germany",
+  "test": "Kaggle-generated input -> Rhodium local roundtrip",
+  "date": "2026-10-14",
+  "status": "PASS_LOCAL_ROUNDTRIP",
+  "external_return_verification": "PENDING",
+  "input": {
+    "bytes": 698914,
+    "sha256": "2C6C60142C3FD99BF25B324994D6EDD837CA6DA7326213253399BF99AC5C46BA"
+  },
+  "transfer": {
+    "wire_sent_bytes": 381517,
+    "reduction_percent": 45.412883416271534
+  },
+  "restore": {
+    "bytes": 698914,
+    "sha256": "2C6C60142C3FD99BF25B324994D6EDD837CA6DA7326213253399BF99AC5C46BA",
+    "bit_identical": true
+  },
+  "checks": {
+    "p0": "PASS",
+    "fresh_cache": "PASS",
+    "blocks_reused": 0,
+    "receiver_ack": "PASS"
+  },
+  "private_core_exposed": false,
+  "claim_boundary": "This record documents the completed local Rhodium roundtrip. The independent Kaggle verification of the returned artifact is not yet complete and is not claimed."
+}
