@@ -1,5 +1,7 @@
 # Rhodium Germany — public benchmark evidence (2026-10-15)
 
+[Customer overview](../README.md) · [Evidence status](../EVIDENCE-STATUS.md) · [Data dictionary](DATA-DICTIONARY.md) · [Verification guide](../PUBLIC-BENCHMARK-VERIFICATION.md)
+
 Historical local PASS records. Publicly disclosed below are only dataset labels, payload sizes, best documented cold/warm transfer bytes, percentage reductions, matching original/restored SHA-256, and evidence report SHA-256. **No source code, proprietary algorithms, secret keys, agent/gatekeeper implementation, private file paths, or customer input files are included.**
 
 The 25 rows represent different input SHA-256 values, not 25 distinct technologies or independent vendor certifications. Each row is selected from previously recorded internally consistent local test reports; a reported SHA-256 match is not equivalent to newly recomputing the original input from source files. Warm results reuse prior state and must not be equated with a first-time cold transfer. The boundaries of recorded wire-byte measurements are specific to each test and are not proof of all possible transport or control overhead. There was no newly executed test for this publication.
@@ -34,4 +36,4 @@ The 25 rows represent different input SHA-256 values, not 25 distinct technologi
 
 Full machine-readable evidence: [CSV](RHODIUM-LOCAL-BEST-OF-ROUNDTRIPS-20261015.csv). Additional benchmark and validation families: [Family register](RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv).
 
-The separate Hutter/enwik9 material and private internal methods are excluded from this publication. Claims in the older family register have their own provenance limitations and may require independent replication before claims of independent validation.
+Full Hutter/enwik9 competition results and private internal methods are outside this collection's scope. The row labelled “Research enwik9 local sample” is a 1 MiB historical sample, not a full competition result. Family-register statuses preserve historical source outcomes; their publication-level scope is defined in [Evidence status](../EVIDENCE-STATUS.md).

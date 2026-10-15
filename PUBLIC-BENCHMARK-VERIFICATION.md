@@ -1,46 +1,81 @@
-# Public benchmark disclosure and verification policy
+# Public evidence verification · Rhodium Germany
 
-## Strict confidentiality boundary
+[Customer overview](README.md) · [Evidence status](EVIDENCE-STATUS.md) · [Results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) · [Data dictionary](benchmarks/DATA-DICTIONARY.md)
 
-The Rhodium internal core, Matrix algorithms, weighting, routing, reconstruction implementation, private manifests, credentials, keys, and Mama/Worker/Research control paths must never be published. Do not publish executable internal components, private file paths, or data identifying customers.
+## What is already documented
 
-## What a publicly verifiable benchmark requires
+The publication contains 25 SHA-distinct local best-of records, a 29-entry historical family register, and a machine-readable local roundtrip report. Historical source PASS outcomes are preserved. They must be read with the publication scope in [EVIDENCE-STATUS.md](EVIDENCE-STATUS.md).
 
-Each claimed PASS needs:
-1. Publicly identified input dataset/version, license and acquisition reference (or publicly downloadable test vector).
-2. Exact uncompressed input bytes, transmission bytes, restored bytes, and clearly defined metric denominator.
-3. SHA-256 digest of the original input and independently obtained restored output, with equality checked.
-4. Run ID, UTC timestamp, hardware/OS profile, cold/warm cache state and baseline comparator when claiming advantage.
-5. Raw machine-readable result log, verifier version and instructions for running an independent verification.
-6. Independent external verification status separately from local PASS. P=0 is an internal acceptance policy, not proof of zero technical risk.
+The best-of reports were checked for internal field consistency. The family register consolidates historical outcomes with different source coverage. **A pending external check does not invalidate a reported local PASS, and a local PASS does not complete an independent check.**
 
-If any requirement is missing, label the measurement HISTORICAL_REPORTED or PENDING_EVIDENCE rather than EXTERNALLY_VERIFIED. Never infer an independent Kaggle certification from a local run.
+## Three checks a reader can perform
 
-## Existing currently documented test
+### 1. Check the published measurements
 
-See `README.md` and `public-evidence/2026-10-14-kaggle-rhodium-roundtrip.json` for the 2026-10-14 local roundtrip. Independent Kaggle verification remains PENDING until evidence is added.
+Download the [best-of CSV](benchmarks/RHODIUM-LOCAL-BEST-OF-ROUNDTRIPS-20261015.csv). For each row, calculate:
 
-## Historical benchmark claims awaiting source artifacts
+`reduction_percent = 100 * (input_bytes - wire_bytes) / input_bytes`
 
-The following figures were previously reported in Rhodium project records. They are **not independently verified by this index**. Do not relabel these rows PASS or publish them as externally validated without primary evidence and a reproducible verifier.
+Use cold and warm wire bytes separately. Compare with the displayed four-decimal percentage, allowing the rounding precision shown. Input bytes, transferred bytes and restored bytes must refer to the same workload and stated measurement boundaries.
 
-| Benchmark | Reported result | Public proof status |
-|---|---:|---|
-| NASA JUNO WAVES | 85.54% reduction | PENDING_EVIDENCE |
-| Matrix cold | 81.25% reduction | PENDING_EVIDENCE |
-| Matrix warm | 99.9916% reduction | PENDING_EVIDENCE |
-| Matrix delta | 99.9541% reduction | PENDING_EVIDENCE |
-| Evidence Gateway | 250,000 -> 1,842 events = **99.2632%** reduction | PENDING_EVIDENCE; older 99.4021% claim superseded |
-| Metrica Sports cold | 65.58% reduction | PENDING_EVIDENCE |
-| Metrica Sports warm | 98.54% reduction | PENDING_EVIDENCE |
-| Blackbox 64 MiB cold | 49.5306% reduction | PENDING_EVIDENCE |
-| Blackbox 64 MiB warm | 99.9913% reduction | PENDING_EVIDENCE |
-| WAN true-cold | 6,950 wire bytes | PENDING_EVIDENCE |
-| 100 GiB scale/recovery | 107,374,182,400 -> 14,476,957,280 bytes (~86.52% reduction), two reported restore checks | PENDING_EVIDENCE |
+This verifies the arithmetic in the publication. It does not execute Rhodium, validate the original workload, or establish elapsed-time or cost savings.
 
-## GitHub / Kaggle publication gate
+### 2. Check an actual returned artifact
 
-Publish sanitized evidence files and verifier instructions on GitHub first. Publish or update a Kaggle dataset/notebook only after checking dataset licensing, private-data removal, and repeatability. State clearly whether each validation occurred locally, on Kaggle, or independently. External evaluators can use a black-box interface or a sealed executable under agreed conditions; the private core is not required for publication.
+The [2026-10-14 JSON](public-evidence/2026-10-14-kaggle-rhodium-roundtrip.json) records a 698,914-byte input and restore with SHA‑256:
+
+`2C6C60142C3FD99BF25B324994D6EDD837CA6DA7326213253399BF99AC5C46BA`
+
+If you have the actual returned file, download [verify_return.py](verify_return.py) and run it with Python 3:
+
+```console
+python verify_return.py RHODIUM-KAGGLE-ROUNDTRIP.csv
+```
+
+Exit code 0 means the supplied file's length and computed SHA‑256 match the published reference; exit code 1 means they do not. The helper's output field `bit_identical` denotes this size/hash check, not a direct byte-by-byte comparison with a second original file. The returned artifact itself is not included in this repository. The command cannot be completed from the evidence JSON alone.
+
+For a direct bit-identity claim, independently obtain both original and restored binary files and compare all bytes as well as their length and hashes. Record who performed the check, when, and exactly which files were compared.
+
+The independent returned-artifact check **on Kaggle remains PENDING**. Publishing the historical CSVs on Kaggle is not completion of this check.
+
+### 3. Check report provenance
+
+`report_sha256` fingerprints a historical report. To recompute it, the verifier needs the exact original report bytes; summaries cannot reconstruct those bytes. Raw confidential source reports are not automatically available in the public tables. The best-of cold/warm selections may come from different profiles and the single report fingerprint is not a full per-profile provenance manifest.
+
+Do not run the legacy flat-schema `verify_public_evidence.py` against the nested roundtrip JSON. They have different schemas. Its legacy flat-record check is not the verifier for this published returned artifact.
+
+## Evidence required for independent reproduction
+
+A complete external validation records:
+
+1. Exact dataset/version, acquisition reference and applicable terms or a public test vector.
+2. Original, transferred and restored sizes with precise byte-measurement boundaries.
+3. Independently recomputed original and restored SHA‑256, plus binary comparison when claiming bit identity.
+4. Run ID/time, hardware/OS and receiver/cache state; a controlled baseline for a comparative performance claim.
+5. Publicly shareable raw measurement logs, verifier version and reproduction instructions.
+6. Identity and scope of the independent check, separately from the source's local PASS.
+
+Where this material is incomplete, use HISTORICAL_REPORTED, HISTORICAL_LOCAL_REPORT_CONSISTENCY or PENDING for the publication-level scope. Preserve source statuses in their own fields; do not promote them to EXTERNALLY_VERIFIED without supporting evidence.
+
+## Historical results and current publication scope
+
+| Item | Stored reported result | Current public scope |
+|---|---|---|
+| NASA JUNO WAVES | 85.54% byte reduction | Historical family entry; independent reproduction not established here |
+| Matrix cold/warm/delta | 81.2486% / 99.9916% / 99.9541% | Historical family entry; different profiles |
+| Evidence Gateway | 250,000 → 1,842 events; 99.2632% | Historical event filtering result; not a byte rate |
+| Metrica Sports | Cold 65.58%; warm 98.54% | Historical source record; no provider certification |
+| Blackbox 64 MiB | Cold 49.5306%; warm 99.9913% | Historical family entry and best-of consistency-checked report fields with published hashes |
+| WAN true-cold | 6,950 wire bytes | Historical specific session; 64 blocks, unique=1 |
+| 100 GiB scale/recovery | 107,374,182,400 → 14,476,957,280 B; about 86.52%; two reported restore checks | Historical family entry; complete independent public reproduction not established |
+
+This table and the family CSV describe historical outcomes. They do not establish a single combined “best overall system” result.
+
+## Confidentiality and publication
+
+Public measurements, public references and explicitly reviewed verification helpers can be shared. The proprietary core, algorithms, internal routing/control implementation, credentials, private manifests and customer payloads remain excluded. Independent evaluation can use agreed black-box conditions without publishing the core.
+
+The [Kaggle dataset](https://www.kaggle.com/datasets/kaikuhnert/rhodium-germany-public-benchmark-evidence) hosts historical result files. The revised [dataset card](kaggle/DATA-CARD.md) is prepared here; its direct save to Kaggle has not been confirmed. Existing input-data and publication rights are not expanded by this documentation update.
 
 ## Additional public audit references (not competition certifications)
 
@@ -57,3 +92,4 @@ An older Evidence Gateway claim used 99.4021%. The source counts 250,000 and 1,8
 ### Additional claim boundary
 
 The historical 64 MiB Cloudflare *live-source* figures are **not** a controlled direct comparison against Cloudflare's product or a generic ISP speed test. Cold/warm results depend on reuse, cache conditions, source characteristics and test methodology. Externally reproduced evidence remains separate from historical reports.
+
