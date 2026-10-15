@@ -1,5 +1,7 @@
 # Rhodium Germany · Benchmark Evidence
 
+**[EINZELREGISTER: PRÜFUNGEN UND BESTE DOKUMENTIERTE ERGEBNISSE](benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md)** – einschließlich der bisher zusammengefassten Funktionschecks, des Millionenvorgänge-Lasttests und weiterer wiedergefundener Belege. [Quellenabgleich und verbleibende Lücken](public-evidence/2026-10-15-source-reconciliation.md).
+
 **[PROJEKTVORSTELLUNG: Was ist Rhodium Germany und welchen Wert kann es haben?](START-HIER-RHODIUM-GERMANY.md)** — verständlich für Freunde, Kunden und andere KI-Systeme; ohne Offenlegung des proprietären Kerns.
 
 
@@ -59,3 +61,4 @@ Website: [rhodium-germany.de](https://rhodium-germany.de)
 Dokumentationsstand: **15.10.2026**. Datensatzdatum und Laufdatum sind getrennt zu betrachten.
 
 Veröffentlicht werden Ergebnisse, Referenzen und ausdrücklich freigegebene Prüfhilfen. Der proprietäre Kern, interne Verfahren, Schlüssel und Kundeneingaben gehören nicht zu dieser Veröffentlichung. Siehe [Veröffentlichungsrichtlinie](PUBLIC-DISCLOSURE-POLICY.md). Es wird keine neue Lizenz für Software oder zugrunde liegende Eingabedaten erteilt; siehe [Nutzung und Datenherkunft](benchmarks/DATA-DICTIONARY.md#use-and-provenance).
+

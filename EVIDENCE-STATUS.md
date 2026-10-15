@@ -9,6 +9,10 @@ Documentation date: **2026-10-15**. This page defines how to read the published 
 
 A historical PASS and a pending independent check can both be true. Pending independent verification does not erase a successful source report; a successful source report does not complete independent verification.
 
+## Expanded individual-check register
+
+[Individual checks](benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md) now expands the previously aggregated validation suite and adds recovered original report outcomes. The machine-readable [evidence file](public-evidence/2026-10-15-recovered-evidence.json) preserves source hashes and separates variants from primary purposes. [Source reconciliation](public-evidence/2026-10-15-source-reconciliation.md) records exactly which source gaps remain. No new acceptance test or Kaggle upload is implied.
+
 ## Publication status
 
 | Collection or item | Reported outcome | Publicly supported scope | Still outside that scope |
@@ -43,3 +47,4 @@ This publication does not establish over 100,000 independently verified runs, a 
 ## Links
 
 [Customer overview](README.md) · [25 best-of results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) · [29 family entries](benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv) · [Stored inventory scope](public-evidence/2026-10-15-historical-inventory-status.md) · [Verification guide](PUBLIC-BENCHMARK-VERIFICATION.md)
+

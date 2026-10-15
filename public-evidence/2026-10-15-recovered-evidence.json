@@ -1,0 +1,1069 @@
+{
+  "schema": "RHODIUM_PUBLIC_DISTINCT_TEST_REGISTER_V1",
+  "as_of": "2026-10-15",
+  "scope": "Consolidation of accessible stored source snapshots; no fresh system acceptance or exhaustive live C/D/Desktop scan.",
+  "grouping": "One purpose per primary check; datasets, sizes, repetitions and environments are profiles unless the checked property differs. Profiles are never summed as independent tests.",
+  "sources": {
+    "SUMMARY-32": {
+      "artifact_sha256": "FAF648785BD5DA54FD64E9E3ECA9AC80AA4B38D7B80C9915D95E6A9C298351EB",
+      "source_kind": "sanitized_historical_summary",
+      "period": "2026-08-16/2026-08-21",
+      "raw_originals_public": false
+    },
+    "LEGACY-29": {
+      "artifact_sha256": "1D5714D080CE167CED33D5BE0B762FC8671961902EEB8AA47E3E86F6CF253D09",
+      "source_kind": "previous_public_register",
+      "record_count": 29
+    },
+    "ENWIK9-ROUNDTRIP": {
+      "artifact_sha256": "CD5D53D3890537D5BCE1907A90DDCC166645EA13A8CA0DFC27FCC32C9DD3D5C4",
+      "source_kind": "stored_original_report",
+      "source_bytes": 1000000000,
+      "source_sha256": "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc"
+    },
+    "RESEARCH-PACKAGE": {
+      "artifact_sha256": "2C4D332FC3AF2C7B78A652FFE15906713BA2593BDE13C22114D9F75F9472CC71",
+      "source_kind": "stored_original_report"
+    },
+    "TYPE-DETERMINISTIC-REPLAY": {
+      "artifact_sha256": "D812FEC3836EBFF96673B12A34B073EF38062F4B2FE49278D57467855C52D689",
+      "source_kind": "stored_original_report",
+      "date_utc": "2026-09-09T13:48:38.965663+00:00"
+    },
+    "TYPE-ACTION-INTERCEPTION": {
+      "artifact_sha256": "8D116F24056F99FCD5996AD7D3ACAA3B5275F7D2933279CF3AFD737445FA0BC8",
+      "source_kind": "stored_original_report",
+      "date_utc": "2026-09-09T13:49:17.662756+00:00"
+    },
+    "SHA-MILLION": {
+      "artifact_sha256": "CFABA470631B45BE54FF0BCDD7B1141C267D352A16A52EE9C0E7461C3634E4D8",
+      "source_kind": "stored_original_report",
+      "date": "2026-07-10 11:15:51"
+    },
+    "LOCAL-FLOW-JULY": {
+      "artifact_sha256": "48510004C3BD39DDEEC85F7CF6635EC2FDB460C21C2FD6990D1F58A2F20F6C84",
+      "source_kind": "stored_original_report"
+    },
+    "SHA-STRESS-SNAPSHOT": {
+      "artifact_sha256": "D643CF3D41535E342EDF2A352A4EF6704184234320EA2D3D3A12EBAFC9457FC6",
+      "source_kind": "stored_original_report"
+    },
+    "CUSTOMER-SUMMARY": {
+      "artifact_sha256": "2AD0B7199B03CC947F4B0A26D1CE1517A46EE98CAE6BAD425B1B50BF0F1E78DC",
+      "source_kind": "historical_customer_summary",
+      "date": "2026-10-09"
+    },
+    "DATASET-25": {
+      "artifact_sha256": "2F5CF539B2E8F9565BA7B6454B289D1AB5513647B905523E93C41745A2CB1A27",
+      "source_kind": "previous_public_dataset_table",
+      "dataset_rows": 25
+    }
+  },
+  "checks": [
+    {
+      "test_id": "CHECK-01",
+      "category": "Daten und Integritaet",
+      "test": "Strukturierte Tabellen",
+      "best_documented_result": "8 MiB; 83.421% Reduktion; Verdichten 16.52 MiB/s; Restore 178.21 MiB/s; Original = Restore",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-02",
+      "category": "Daten und Integritaet",
+      "test": "Zeilenorientierte Objektdaten",
+      "best_documented_result": "8 MiB; 93.737% Reduktion; Verdichten 57.23 MiB/s; Restore 263.88 MiB/s; Original = Restore",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-03",
+      "category": "Daten und Integritaet",
+      "test": "Zeitreihen",
+      "best_documented_result": "8 MiB; 99.141% Reduktion; Verdichten 189.11 MiB/s; Restore 258.85 MiB/s; Original = Restore",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-04",
+      "category": "Daten und Integritaet",
+      "test": "Zufallsdaten",
+      "best_documented_result": "Identische Rekonstruktion; -0.031% Reduktion (Ausgabe groesser); Restore 443.93 MiB/s",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung. Erfolgreicher Restore, keine Reduktion dieses Zufallsdatensatzes.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-05",
+      "category": "Daten und Integritaet",
+      "test": "Großer Forschungsdatensatz",
+      "best_documented_result": "5,443,001,419 B -> 787,199,297 B; 85.54% Reduktion; Restore dokumentiert",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-06",
+      "category": "Daten und Integritaet",
+      "test": "100-GiB-Roundtrip",
+      "best_documented_result": "100 GiB; 107,374,182,400 B -> 14,476,957,280 B; ca. 86.52%; 2/2 Restore-PASS",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-07",
+      "category": "Daten und Integritaet",
+      "test": "Delta-Wiederverwendung",
+      "best_documented_result": "64 Bloecke; 63 wiederverwendet; 1 geaendert; 98.4375% weniger Transport im dokumentierten Profil",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-08",
+      "category": "Daten und Integritaet",
+      "test": "Beschädigungserkennung",
+      "best_documented_result": "8 MiB; gezielt geaendertes Bit / betroffener Block erkannt",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-09",
+      "category": "Durchfluss und Betrieb",
+      "test": "End-to-End-Durchsatz",
+      "best_documented_result": "Juli-Profil: 20,000/20,000 interne Vorgaenge, 0 Fehler, 479,442.48/s; August-Profil: 54,105.74/s. Unterschiedliche historische Aufbauten, kein Versionsvergleich.",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung. Lokaler Aufbau; kein Beleg fuer ein reales WAN oder Satellitennetz.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-10",
+      "category": "Durchfluss und Betrieb",
+      "test": "Latenzprofil",
+      "best_documented_result": "August-Profil: p50 17.21 us; p95 30.21 us; p99 33.81 us; zusammengehoeriger Lauf",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung. Lokaler Aufbau; kein Beleg fuer ein reales WAN oder Satellitennetz.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-11",
+      "category": "Durchfluss und Betrieb",
+      "test": "Rückstaupuffer",
+      "best_documented_result": "18,000 Ereignisse gepuffert",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung. Lokaler Aufbau; kein Beleg fuer ein reales WAN oder Satellitennetz.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-12",
+      "category": "Durchfluss und Betrieb",
+      "test": "Vollständige Zustellung",
+      "best_documented_result": "20,000/20,000 Ereignisse ausgeliefert",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung. Lokaler Aufbau; kein Beleg fuer ein reales WAN oder Satellitennetz.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-13",
+      "category": "Durchfluss und Betrieb",
+      "test": "Duplikatfreiheit",
+      "best_documented_result": "0 doppelte Auslieferungen",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung. Lokaler Aufbau; kein Beleg fuer ein reales WAN oder Satellitennetz.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-14",
+      "category": "Durchfluss und Betrieb",
+      "test": "Replay-Leistung",
+      "best_documented_result": "2,360,787 Replay-Ereignisse/s",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung. Lokaler Aufbau; kein Beleg fuer ein reales WAN oder Satellitennetz.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-15",
+      "category": "Durchfluss und Betrieb",
+      "test": "Forschungsbox-Gesamttest",
+      "best_documented_result": "2/2 PASS; beste dokumentierte Laufzeit 5.688 s (weiterer Lauf 6.514 s)",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-16",
+      "category": "Durchfluss und Betrieb",
+      "test": "Mutterbox-Gesamttest",
+      "best_documented_result": "2/2 PASS; beste dokumentierte Laufzeit 6.353 s (weiterer Lauf 10.683 s)",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-17",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Gesundheit vor Test",
+      "best_documented_result": "PASS: vor Belastung erreichbar",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-18",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Gesundheit nach Test",
+      "best_documented_result": "PASS: nach Belastung erreichbar",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-19",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Schnittstellenvertrag",
+      "best_documented_result": "PASS: Schnittstellenbeschreibung geprueft",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-20",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Reales Prozessschema",
+      "best_documented_result": "PASS: Pflichtstruktur eingehalten",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-21",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Gültige Verarbeitung",
+      "best_documented_result": "PASS: zulaessige Eingabe akzeptiert",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-22",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Kein Inhaltsecho",
+      "best_documented_result": "PASS: kein unkontrolliertes Inhaltsecho",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-23",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Verdeckter Operatorinhalt",
+      "best_documented_result": "PASS: interner Inhalt nicht offengelegt",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-24",
+      "category": "Schnittstelle und Datenschutz",
+      "test": "Deaktivierte Persistenz",
+      "best_documented_result": "PASS: keine dauerhafte Inhaltsspeicherung im Pruefpfad",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-25",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Inhaltsfingerabdruck",
+      "best_documented_result": "PASS: Inhaltszuordnung und Integritaet",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-26",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Gültiger Nachweis",
+      "best_documented_result": "PASS: korrekte Pruefreferenz akzeptiert",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-27",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Manipulierter Nachweis",
+      "best_documented_result": "PASS: veraenderter Beleg abgewiesen",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-28",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Fehlformatierte Eingaben",
+      "best_documented_result": "PASS: 4 ungueltige Varianten abgewiesen",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-29",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Zu kurze Kennung",
+      "best_documented_result": "PASS: zu kurze Kennung abgewiesen",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-30",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Übergroße Eingabe",
+      "best_documented_result": "PASS: Groessenlimit durchgesetzt",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-31",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Berechtigungsgrenzen",
+      "best_documented_result": "PASS: Verweigern und erlaubte Aktionen getrennt geprueft",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "CHECK-32",
+      "category": "Nachweise und Eingabegrenzen",
+      "test": "Angriffsmuster als Daten",
+      "best_documented_result": "PASS: 10 Angriffsmuster als Daten verarbeitet; keine Befehlsuebernahme protokolliert",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Interner historischer Funktionscheck; gekuerzte Zusammenfassung; keine unabhaengige Zertifizierung.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "category": "Daten und Integritaet",
+      "test": "Binaerer Cold-/Warm-Roundtrip",
+      "best_documented_result": "Mehrere dokumentierte Profile von 6 MiB bis 8 GiB; je Profil getrennte Bytewerte und Restore-Nachweise. Kaggle-Eingabe: lokaler PASS, externe Rueckpruefung offen.",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Datensatz-, Groessen- und Umgebungsvarianten bleiben Profile derselben Pruefart; Warm setzt Empfaengerzustand voraus.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-RECOGNITION",
+      "category": "Wiedererkennung",
+      "test": "Referenzgestuetzte Wiedererkennung",
+      "best_documented_result": "1,000,000,000 B -> 81,481 B Warm; 134,728,520 B -> 11,354 B; 1,048,576 B -> 7,151 B; jeweils im eigenen dokumentierten Profil.",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Datensatz-, Groessen- und Umgebungsvarianten bleiben Profile derselben Pruefart; Warm setzt Empfaengerzustand voraus.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-03",
+      "category": "Filtering",
+      "test": "Evidence Gateway",
+      "best_documented_result": "250,000 -> 1,842; calculated reduction 99.2632%; precision 1.0; recall 1.0",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Uses mathematically corrected reduction for 250000 -> 1842",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-05",
+      "category": "External Proof",
+      "test": "Canonical Public Proof",
+      "best_documented_result": "Signature verification and tamper rejection; 3/3 + 3/3 PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Public attestation proof",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-06",
+      "category": "External Proof",
+      "test": "World Blind Proof",
+      "best_documented_result": "4/4 + 2/2 PASS; manipulated engine blocked before execution",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Blind/integrity proof",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-11",
+      "category": "Live Source",
+      "test": "Cloudflare Live Source",
+      "best_documented_result": "6,950 B cold; 5,838 B warm; restore PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Same-payload live-source measurement; not represented as symmetric Internet-path-vs-Internet-path benchmark",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "UBUNTU-01",
+      "category": "Plattformvalidierung",
+      "test": "P0-Freigabeverhalten unter Ubuntu",
+      "best_documented_result": "Fail-closed-PASS",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_suite_subcheck",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historisch gemeldeter Teilcheck aus Run 36962456220; kein isolierter Leistungsgewinn nachgewiesen.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "UBUNTU-02",
+      "category": "Plattformvalidierung",
+      "test": "eBPF/XDP-Canary",
+      "best_documented_result": "Canary-PASS",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_suite_subcheck",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historisch gemeldeter Teilcheck aus Run 36962456220; kein isolierter Leistungsgewinn nachgewiesen.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "UBUNTU-03",
+      "category": "Plattformvalidierung",
+      "test": "Ubuntu Compile-/Load-Pruefung",
+      "best_documented_result": "Compile/Load-PASS",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_suite_subcheck",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historisch gemeldeter Teilcheck aus Run 36962456220; kein isolierter Leistungsgewinn nachgewiesen.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "UBUNTU-04",
+      "category": "Plattformvalidierung",
+      "test": "SHA-NI-Ausfuehrung",
+      "best_documented_result": "SHA-NI-PASS",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_suite_subcheck",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historisch gemeldeter Teilcheck aus Run 36962456220; kein isolierter Leistungsgewinn nachgewiesen.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "UBUNTU-05",
+      "category": "Plattformvalidierung",
+      "test": "Zero-Copy-Pruefung",
+      "best_documented_result": "Zero-Copy-PASS",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_suite_subcheck",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historisch gemeldeter Teilcheck aus Run 36962456220; kein isolierter Leistungsgewinn nachgewiesen.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "UBUNTU-06",
+      "category": "Plattformvalidierung",
+      "test": "Lock-free-Atomic-Pruefung",
+      "best_documented_result": "Atomic-PASS",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "historical_suite_subcheck",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historisch gemeldeter Teilcheck aus Run 36962456220; kein isolierter Leistungsgewinn nachgewiesen.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-13",
+      "category": "Upstream Compatibility",
+      "test": "Cloudflare Speedtest upstream",
+      "best_documented_result": "16/16 test files; 163/163 tests PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Compatibility/build validation; not a Rhodium-vs-Cloudflare performance win",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-14",
+      "category": "Upstream Compatibility",
+      "test": "Google Brotli upstream",
+      "best_documented_result": "73/73 CTest PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Compatibility/build validation; not a Rhodium-vs-Brotli performance win",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-15",
+      "category": "Upstream Compatibility",
+      "test": "Meta Zstd upstream",
+      "best_documented_result": "make zstd + make check PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Compatibility/build validation; not a Rhodium-vs-Zstd performance win",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-16",
+      "category": "Upstream Compatibility",
+      "test": "Google Fleetbench upstream",
+      "best_documented_result": "Optimized compression benchmark build PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Build validation only",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-17",
+      "category": "Upstream Compatibility",
+      "test": "Microsoft NTTTCP upstream",
+      "best_documented_result": "Official build + CLI smoke PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Build/smoke validation only",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-18",
+      "category": "Upstream Compatibility",
+      "test": "Cloudflare zlib upstream",
+      "best_documented_result": "CMake build completed; upstream path recorded PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Build validation only",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-20",
+      "category": "Sport",
+      "test": "Metrica Sports Sample Game 1",
+      "best_documented_result": "Cold 11,550,999 B (-65.58%); Warm 488,590 B (-98.54%); 123/128 blocks reused; restore hash-identical; P0 PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Benchmark on sample sports data",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-21",
+      "category": "Seismic",
+      "test": "EarthScope/USGS live evidence",
+      "best_documented_result": "Latency 2.4-6.3 s; accepted_records=23; P0 live evidence",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Live evidence; not an EarthScope/USGS certification",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-23",
+      "category": "Relay",
+      "test": "Verify-Relay",
+      "best_documented_result": "Millisecond end-to-end path; SHA-256 seal; VERIFIZIERT_UND_VERSIEGELT",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Relay/integrity proof",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-24",
+      "category": "WAN",
+      "test": "WAN TRUE-COLD",
+      "best_documented_result": "Wire 6,950 B; PASS",
+      "reported_status": "PASS",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Cross-network evidence; claim limited to documented session",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-28",
+      "category": "Vendor Comparison",
+      "test": "Rhodium vs MSP360 sealed local comparison",
+      "best_documented_result": "Cold: Rhodium 67,157,014 B vs MSP360 77,628,710 B (-13.489463%); delta: Rhodium 8,407,583 B vs MSP360 12,608,574 B (-33.318526%); Rhodium cold/delta restore bit-identical; report SHA-256 2672A959AAC4B8E299F9174E484F7DA675B1973712AD492DFD5C1C6C6EB7F867",
+      "reported_status": "PASS_FINAL_SEALED_EVIDENCE",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historical defined local test dated 2026-09-21; MSP360 uploaded bytes vs Rhodium wire bytes are different implementation measurement points; not independent vendor certification",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "LEGACY-29",
+      "category": "NASA Data Processing",
+      "test": "NASA C-MAPSS FD001 local data pipeline",
+      "best_documented_result": "PASS local pipeline; 495,144/495,144 values processed; P0 no drop; elapsed 147 ms; reported throughput 3,368,327 values/s; train SHA-256 963B5E22825B34D8B21C69E1AEB4AF3E647050EB672EE8834BA4B5D91D2DE0F8",
+      "reported_status": "PASS_LOCAL_PIPELINE",
+      "evidence_level": "historical_report",
+      "source_ids": "LEGACY-29",
+      "claim_boundary": "Historical desktop report 2026-09-23; signal detection/scoring is not externally validated predictive accuracy; failure-cycle labels used after matrix scoring; no NASA certification",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-ENWIK9-TRANSFER",
+      "category": "Textdaten",
+      "test": "Vollstaendiger enwik9-Transport",
+      "best_documented_result": "1,000,000,000 B; Cold 323,250,554 Senderbytes / 63.5063 s; Warm 10,592 Senderbytes / 7.9804 s; Cold und Warm Restore bitidentisch.",
+      "reported_status": "PASS_REAL_ROUNDTRIP",
+      "evidence_level": "stored_original_report",
+      "source_ids": "ENWIK9-ROUNDTRIP",
+      "claim_boundary": "Textdatenprofil des binaeren Roundtrips, keine zusaetzliche unabhängige Testart; Warm mit gefuelltem Empfaengerzustand; kein Hutter-Preisresultat.",
+      "entry_kind": "profile_summary"
+    },
+    {
+      "test_id": "TYPE-RESEARCH-PACKAGE",
+      "category": "Isolierte Forschung",
+      "test": "Verlustfreier experimenteller Software-Kandidat",
+      "best_documented_result": "1,048,576 B -> 529,880 B Paket; byte-identischer Restore; Pack 0.115248 s; Restore 0.214922 s.",
+      "reported_status": "PASS_RESEARCH_TEST",
+      "evidence_level": "historical_report",
+      "source_ids": "RESEARCH-PACKAGE",
+      "claim_boundary": "Lokaler Forschungsversuch; Python-Laufzeit nicht im Paket; kein eigenstaendiges neues Codec-Verfahren oder Wettbewerbsrekord belegt.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-DETERMINISTIC-REPLAY",
+      "category": "Kontrollierte Ausfuehrung",
+      "test": "Deterministische Wiederholung",
+      "best_documented_result": "Zwei kanonische Ergebnisfolgen identisch; gesperrte Zielaktion in beiden Folgen nicht ausgefuehrt.",
+      "reported_status": "PASS_DETERMINISTIC_REPLAY",
+      "evidence_level": "historical_report",
+      "source_ids": "TYPE-DETERMINISTIC-REPLAY",
+      "claim_boundary": "Synthetischer lokaler Test ohne externe Wirkungen; interne Regeln und Implementierung bleiben privat.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-ACTION-INTERCEPTION",
+      "category": "Kontrollierte Ausfuehrung",
+      "test": "Abfangen unzulaessiger Werkzeugaktionen",
+      "best_documented_result": "Erlaubte Aktionen ausgefuehrt; 1/1 unzulaessige Zielaktion ohne Zielaufruf blockiert; Funktionskontrollen bestanden.",
+      "reported_status": "PASS_AGENTIC_TOOL_CALL_INTERCEPTION",
+      "evidence_level": "historical_report",
+      "source_ids": "TYPE-ACTION-INTERCEPTION",
+      "claim_boundary": "Synthetischer lokaler Test ohne externe Wirkungen; interne Regeln und Implementierung bleiben privat.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-SHA-LOAD",
+      "category": "Integritaet und Last",
+      "test": "Synthetischer SHA-256-Siegel-Lasttest",
+      "best_documented_result": "1,000,000 Pruefvorgaenge; 0 Fehler; 1.640618 s; 609,526.48/s; p50/p95/p99 0.00183/0.00231/0.0026 ms.",
+      "reported_status": "ERFOLGREICH",
+      "evidence_level": "historical_report",
+      "source_ids": "SHA-MILLION",
+      "claim_boundary": "Ein Lasttest mit einer Million Vorgaengen, keine Million unterschiedlicher Benchmarks; lokaler synthetischer Aufbau.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "category": "Schnittstellenlast",
+      "test": "HTTP-Endpunkt-Lastprofile",
+      "best_documented_result": "7 Endpunktprofile mit je Basis- und Doppellast; jeweils 0 HTTP-Fehler. Hoechster dokumentierter Durchsatz im Gesamtfluss-Profil: 1,052.43/s bei 200 Anfragen / 16 Verbindungen.",
+      "reported_status": "REPORTED_PASS",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Basis: 100 Anfragen / 8 Verbindungen; Doppelt: 200 / 16. Endpunkte sind Profile derselben Lastpruefart. Uebergeordnete Orchestrierung war nicht vollstaendig gesund.",
+      "entry_kind": "check"
+    },
+    {
+      "test_id": "TYPE-ANOMALY-MEASUREMENT",
+      "category": "Forschungsmessung",
+      "test": "Synthetische Anomalieentscheidung",
+      "best_documented_result": "50,000 Ereignisse; TP 299; FP 505; TN 48,999; FN 197; Recall 60.282%; Precision 37.189%; F1 ca. 46%.",
+      "reported_status": "MEASUREMENT_REPORTED",
+      "evidence_level": "sanitized_historical_summary",
+      "source_ids": "SUMMARY-32",
+      "claim_boundary": "Messlauf dokumentiert; keine produktionsreife Erkennungsqualitaet und keine Ausfallvorhersage-Zertifizierung.",
+      "entry_kind": "check"
+    }
+  ],
+  "profiles": [
+    {
+      "test_id": "CHECK-05",
+      "source": "LEGACY-29",
+      "label": "NASA Juno WAVES",
+      "input_or_scope": "5,443,001,419 B; 62 files",
+      "result": "5.069 GiB -> 0.733 GiB; 85.54% lossless reduction; restore SHA-256 identical",
+      "reported_status": "PASS",
+      "boundary": "Benchmark on public NASA Juno WAVES data; no NASA certification or endorsement"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "source": "LEGACY-29",
+      "label": "Matrix Live",
+      "input_or_scope": "Reference cold/warm/delta runs",
+      "result": "Cold 81.2486%; Warm 99.9916%; Delta 99.9541%; integrity retained",
+      "reported_status": "PASS",
+      "boundary": "Historical Rhodium measurement"
+    },
+    {
+      "test_id": "CHECK-06",
+      "source": "LEGACY-29",
+      "label": "100 GiB Scale / Recovery",
+      "input_or_scope": "107,374,182,400 B",
+      "result": "14,476,957,280 B; approx. 86.52%; two restore checks PASS",
+      "reported_status": "PASS",
+      "boundary": "Historical scale/recovery evidence"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "source": "LEGACY-29",
+      "label": "External Matrix Proof",
+      "input_or_scope": "Run 33840634749; 1 GiB",
+      "result": "Cold 49.482384%; Warm 99.991857%; bit-identical PASS; provenance attestation",
+      "reported_status": "PASS",
+      "boundary": "Historical external proof"
+    },
+    {
+      "test_id": "TYPE-RECOGNITION",
+      "source": "LEGACY-29",
+      "label": "Fingerprint Recognition 32",
+      "input_or_scope": "1,000,000,000 B",
+      "result": "81,481 B warm recognition wire; 99.9918519%; SHA-256 match; bit-identical",
+      "reported_status": "PASS",
+      "boundary": "Run 36869981648"
+    },
+    {
+      "test_id": "TYPE-RECOGNITION",
+      "source": "LEGACY-29",
+      "label": "Foreign Recognition 32",
+      "input_or_scope": "134,728,520 B",
+      "result": "11,354 B; 99.9915727%; SHA-256 match; bit-identical",
+      "reported_status": "PASS",
+      "boundary": "Run 36869283513"
+    },
+    {
+      "test_id": "TYPE-RECOGNITION",
+      "source": "LEGACY-29",
+      "label": "Fingerprint Pure One-File",
+      "input_or_scope": "1,048,576 B",
+      "result": "7,151 B; restore SHA-256 identical; bit-identical PASS; restore approx. 62 ms",
+      "reported_status": "PASS",
+      "boundary": "Run 36993722643"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "source": "LEGACY-29",
+      "label": "Mirror-Restore",
+      "input_or_scope": "6 MiB A/B",
+      "result": "Restore bit-identical PASS",
+      "reported_status": "PASS",
+      "boundary": "Integrity/restore proof"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "source": "LEGACY-29",
+      "label": "64 MiB Blackbox",
+      "input_or_scope": "64 MiB",
+      "result": "Cold wire 33,869,410 B (-49.5306%); Warm wire 5,827 B (-99.9913%); warm blocks=64; hash/bit-identical; PASS_REAL_ROUNDTRIP",
+      "reported_status": "PASS",
+      "boundary": "Rhodium blackbox roundtrip"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "source": "LEGACY-29",
+      "label": "128 MiB Golden Roundtrip",
+      "input_or_scope": "134,217,728 B",
+      "result": "Cold wire 67,737,497 B (-49.5316319167614%); Warm wire 11,270 B (-99.99160319566727%); 128 reused; cold/warm hash/bit-identical",
+      "reported_status": "PASS",
+      "boundary": "Local Mama capability golden test"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "source": "LEGACY-29",
+      "label": "Kaggle-generated input -> Rhodium",
+      "input_or_scope": "698,914 B; SHA-256 2C6C60142C3FD99BF25B324994D6EDD837CA6DA7326213253399BF99AC5C46BA",
+      "result": "Wire 381,517 B; reduction 45.412883416271534%; restored 698,914 B; identical SHA-256; bit-identical; P0; fresh cache; blocks reused=0; receiver ACK",
+      "reported_status": "PASS_LOCAL_ROUNDTRIP",
+      "boundary": "Independent Kaggle verification of returned artifact is still PENDING"
+    },
+    {
+      "test_id": "TYPE-BINARY-ROUNDTRIP",
+      "source": "ENWIK9-ROUNDTRIP",
+      "label": "enwik9 complete 1,000,000,000 B",
+      "source_sha256": "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc",
+      "cold": {
+        "source_bytes": 1000000000,
+        "wire_sent_bytes": 323250554,
+        "restored_bytes": 1000000000,
+        "restored_sha256": "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc",
+        "bit_identical": true,
+        "hash_match": true,
+        "transfer_seconds": 63.50626339999144,
+        "status": "PASS"
+      },
+      "warm": {
+        "source_bytes": 1000000000,
+        "wire_sent_bytes": 10592,
+        "restored_bytes": 1000000000,
+        "restored_sha256": "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc",
+        "bit_identical": true,
+        "hash_match": true,
+        "transfer_seconds": 7.980400300002657,
+        "status": "PASS"
+      },
+      "boundary": "Local loopback transport. Warm uses retained receiver state; not a standalone compressed archive or official competition result. Source dataset label is supported by matching documented dataset hashes; original generic metadata label is inconsistent."
+    },
+    {
+      "test_id": "CHECK-09",
+      "source": "LOCAL-FLOW-JULY",
+      "label": "Local internal pipeline 2026-07-10",
+      "operations": 20000,
+      "successful": 20000,
+      "errors": 0,
+      "duration_seconds": 0.041715,
+      "throughput_per_second": 479442.48,
+      "latency_ms": {
+        "min": 0.001389,
+        "avg": 0.00183,
+        "p50": 0.00148,
+        "p95": 0.0027,
+        "p99": 0.003171,
+        "max": 0.04056
+      },
+      "boundary": "Internal processing only; all five preceding web fetches reported errors. This is not a successful live external website test."
+    },
+    {
+      "test_id": "TYPE-SHA-LOAD",
+      "source": "SHA-STRESS-SNAPSHOT",
+      "label": "Long stress-run progress snapshot",
+      "processed": 2464000000,
+      "reported_errors": 0,
+      "reported_status": "LAEUFT",
+      "throughput_per_second": 5089793.9,
+      "boundary": "Progress snapshot only, no completed overall stress-run PASS. Counts are iterations, not independent benchmarks."
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "source": "SUMMARY-32",
+      "label": "Management-Schnittstelle",
+      "base": {
+        "requests": 100,
+        "concurrency": 8,
+        "throughput_per_second": 418.27,
+        "p95_ms": 35.46,
+        "p99_ms": 39.73,
+        "errors": 0
+      },
+      "double": {
+        "requests": 200,
+        "concurrency": 16,
+        "throughput_per_second": 157.5,
+        "p95_ms": 33.23,
+        "p99_ms": 1060.59,
+        "errors": 0
+      }
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "source": "SUMMARY-32",
+      "label": "Oeffentliche Oberflaeche",
+      "base": {
+        "requests": 100,
+        "concurrency": 8,
+        "throughput_per_second": 768.87,
+        "p95_ms": 18.61,
+        "p99_ms": 24.14,
+        "errors": 0
+      },
+      "double": {
+        "requests": 200,
+        "concurrency": 16,
+        "throughput_per_second": 1000.6,
+        "p95_ms": 18.95,
+        "p99_ms": 20.33,
+        "errors": 0
+      }
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "source": "SUMMARY-32",
+      "label": "Kontroll-Gateway",
+      "base": {
+        "requests": 100,
+        "concurrency": 8,
+        "throughput_per_second": 89.05,
+        "p95_ms": 105.3,
+        "p99_ms": 113.42,
+        "errors": 0
+      },
+      "double": {
+        "requests": 200,
+        "concurrency": 16,
+        "throughput_per_second": 77.52,
+        "p95_ms": 277.67,
+        "p99_ms": 1172.84,
+        "errors": 0
+      }
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "source": "SUMMARY-32",
+      "label": "Verifikations-Gateway",
+      "base": {
+        "requests": 100,
+        "concurrency": 8,
+        "throughput_per_second": 83.75,
+        "p95_ms": 112.31,
+        "p99_ms": 126.03,
+        "errors": 0
+      },
+      "double": {
+        "requests": 200,
+        "concurrency": 16,
+        "throughput_per_second": 73.79,
+        "p95_ms": 279.88,
+        "p99_ms": 303.76,
+        "errors": 0
+      }
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "source": "SUMMARY-32",
+      "label": "Verarbeitungspipeline",
+      "base": {
+        "requests": 100,
+        "concurrency": 8,
+        "throughput_per_second": 108.1,
+        "p95_ms": 768.7,
+        "p99_ms": 771.9,
+        "errors": 0
+      },
+      "double": {
+        "requests": 200,
+        "concurrency": 16,
+        "throughput_per_second": 1033.2,
+        "p95_ms": 22.73,
+        "p99_ms": 31.47,
+        "errors": 0
+      }
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "source": "SUMMARY-32",
+      "label": "Gesamtfluss",
+      "base": {
+        "requests": 100,
+        "concurrency": 8,
+        "throughput_per_second": 806.97,
+        "p95_ms": 21.96,
+        "p99_ms": 23.8,
+        "errors": 0
+      },
+      "double": {
+        "requests": 200,
+        "concurrency": 16,
+        "throughput_per_second": 1052.43,
+        "p95_ms": 22.23,
+        "p99_ms": 24.42,
+        "errors": 0
+      }
+    },
+    {
+      "test_id": "TYPE-HTTP-LOAD",
+      "source": "SUMMARY-32",
+      "label": "Einzelbox-Fluss",
+      "base": {
+        "requests": 100,
+        "concurrency": 8,
+        "throughput_per_second": 905.79,
+        "p95_ms": 14.5,
+        "p99_ms": 16.06,
+        "errors": 0
+      },
+      "double": {
+        "requests": 200,
+        "concurrency": 16,
+        "throughput_per_second": 977.45,
+        "p95_ms": 35.14,
+        "p99_ms": 40.24,
+        "errors": 0
+      }
+    },
+    {
+      "test_id": "CHECK-31",
+      "source": "CUSTOMER-SUMMARY",
+      "label": "Limited local security suite",
+      "tested": 15,
+      "passed": 15,
+      "boundary": "Suite summary without per-case identifiers; not counted as 15 additional independent test types."
+    }
+  ]
+}
