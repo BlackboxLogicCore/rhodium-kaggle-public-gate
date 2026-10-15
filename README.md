@@ -46,12 +46,10 @@ SHA-256/size comparison of that returned artifact.
 Only verified measurements are published here. No private Rhodium core
 implementation is included.
 
-### 2026-10-15 — Benchmark evidence register update
+### 2026-10-15 — Best historical Rhodium roundtrip results
 
-The [public-safe benchmark index](benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv) currently contains **27 documented entries** spanning measured data-path results, integrity/restore proofs, validation checks and upstream compatibility. These categories are kept separate; a PASS in a build or self-inspection check is not a new end-to-end compression benchmark.
+The public-safe evidence collection now also includes **25 distinct local dataset best-of records**, selected by distinct original SHA-256 from existing cold/warm research reports. The accompanying table records source size, best measured cold/warm wire bytes, reduction, matching original/restore SHA-256 and report fingerprint.
 
-Existing internal registers inventory 2,733 reports (2,719 unique files), and a consolidated JSON evidence register covers 2,369 files arranged into 216 automatically classified groups. These counts are provided for traceability only: they do not assert 216 independently passed tests, and the inventories were not independently audited by GitHub or Kaggle.
+[Read the best-of local roundtrip results](benchmarks/RHODIUM-LOCAL-BEST-OF-ROUNDTRIPS-20261015.csv) or the [benchmark families and validation results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv).
 
-No additional benchmark execution is claimed in this update. Existing per-test SHA-256, original/restore sizes and on-wire measurements retain their specific test and measurement boundaries. The Kaggle-generated-input local roundtrip remains verified locally, with independent Kaggle validation **PENDING**.
-
-The proprietary core and internal agent, validation and reconstruction mechanisms remain outside this repository.
+These are existing successful local measurements, not newly executed tests or independently certified results. Repeated runs of the same input are represented by one best record; per-dataset rows and benchmark families are distinct categories and should not be summed as independent families. Private Rhodium methods and internals remain excluded.
