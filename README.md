@@ -45,3 +45,13 @@ SHA-256/size comparison of that returned artifact.
 
 Only verified measurements are published here. No private Rhodium core
 implementation is included.
+
+### 2026-10-15 — Benchmark evidence register update
+
+The [public-safe benchmark index](benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv) currently contains **27 documented entries** spanning measured data-path results, integrity/restore proofs, validation checks and upstream compatibility. These categories are kept separate; a PASS in a build or self-inspection check is not a new end-to-end compression benchmark.
+
+Existing internal registers inventory 2,733 reports (2,719 unique files), and a consolidated JSON evidence register covers 2,369 files arranged into 216 automatically classified groups. These counts are provided for traceability only: they do not assert 216 independently passed tests, and the inventories were not independently audited by GitHub or Kaggle.
+
+No additional benchmark execution is claimed in this update. Existing per-test SHA-256, original/restore sizes and on-wire measurements retain their specific test and measurement boundaries. The Kaggle-generated-input local roundtrip remains verified locally, with independent Kaggle validation **PENDING**.
+
+The proprietary core and internal agent, validation and reconstruction mechanisms remain outside this repository.
