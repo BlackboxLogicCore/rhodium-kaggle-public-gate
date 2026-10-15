@@ -25,3 +25,15 @@ The 2026-10-14 Kaggle-generated-input -> Rhodium local roundtrip is PASS locally
 enwik9/Hutter is deliberately excluded from this public benchmark family. Internal implementation details and unverified historical claims are also excluded.
 
 This is a public evidence index, not a claim of certification or endorsement by NASA, Kaggle, Cloudflare, Google, Meta, Microsoft, EarthScope, USGS, Metrica Sports, or any other named upstream/data provider.
+
+## Evidence inventory reconciliation — 2026-10-15
+
+The current public index contains **27 documented benchmark/proof/validation entries**, not 27 independently certified benchmark results. Historic PASS labels are retained as Rhodium-recorded outcomes and must be read together with each row's claim boundary.
+
+A separate internal evidence inventory reports **2,733 indexed reports (2,719 unique files)**; a consolidated JSON register lists **2,369 evidence files in 216 automatically classified test groups**. These are inventory counts, **not** proof that all files/groups passed, and **not** 216 independent benchmark victories. No new experimental runs were required to reconcile these counts.
+
+Publication rule: report input size, on-wire bytes, restored size and matching SHA-256 only where supported by the original evidence. Published on-wire figures must clearly state their measurement boundary; overhead not separately evidenced must not be assumed included or excluded. Previous outcomes are not a substitute for missing end-to-end payload evidence.
+
+Current external verification distinction: the Kaggle-generated-input local roundtrip remains `PASS_LOCAL_ROUNDTRIP`; independent Kaggle return validation remains `PENDING`. Neither upstream compatibility checks nor internal self-inspection constitute independent performance certification.
+
+Protected implementation, proprietary processing and reconstruction methods, internal agent/control architecture and private artifacts remain excluded from this public repository.
