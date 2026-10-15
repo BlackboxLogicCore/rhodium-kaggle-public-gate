@@ -1,5 +1,8 @@
 # Rhodium Germany · Benchmark Evidence
 
+**[PROJEKTVORSTELLUNG: Was ist Rhodium Germany und welchen Wert kann es haben?](START-HIER-RHODIUM-GERMANY.md)** — verständlich für Freunde, Kunden und andere KI-Systeme; ohne Offenlegung des proprietären Kerns.
+
+
 **Weniger Daten übertragen. Wiederherstellung nachvollziehbar belegen.**
 
 Diese öffentliche Sammlung zeigt dokumentierte Ergebnisse zur Datenübertragung, Wiederherstellung und Integrität von Rhodium Germany. Für Kunden ist die entscheidende Frage: **Wie viele Bytes werden im konkreten Anwendungsfall übertragen und bleibt der wiederhergestellte Inhalt identisch?** Hier stehen die Messwerte, SHA‑256-Fingerabdrücke und ihre jeweiligen Prüfgrenzen.
