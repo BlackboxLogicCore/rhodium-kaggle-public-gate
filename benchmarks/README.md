@@ -36,3 +36,10 @@ See [`RHODIUM-LOCAL-BEST-OF-ROUNDTRIPS-20261015.csv`](RHODIUM-LOCAL-BEST-OF-ROUN
 - No new benchmark was executed to prepare this index. Internal methods, processes, agents and reconstruction details are not included.
 
 2026-10-15 historical Desktop reconciliation: the public family index was extended with the sealed Rhodium/MSP360 local cold/delta comparison and the NASA C-MAPSS FD001 local processing result. These are two documented historical successes, not rerun measurements or vendor certifications; underlying benchmark/test conditions and limits appear in the CSV.
+
+## Public results with complete SHA-256 evidence
+
+- [25 SHA-distinct historical best-of benchmark records with full source/restore and report SHA-256](RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md)
+- [Same public-safe evidence files on Kaggle](https://www.kaggle.com/datasets/kaikuhnert/rhodium-germany-public-benchmark-evidence)
+
+These public files contain reported measurements, fingerprints, dataset labels and limitations only. They do not disclose the underlying Rhodium processing algorithm, agent or gatekeeper implementation, source code, confidential paths, or customer data. Kaggle hosts a dataset of historical results, not a completed independent Kaggle benchmark validation.
