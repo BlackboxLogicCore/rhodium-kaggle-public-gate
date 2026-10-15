@@ -30,13 +30,30 @@ The following figures were previously reported in Rhodium project records. They 
 | Matrix cold | 81.25% reduction | PENDING_EVIDENCE |
 | Matrix warm | 99.9916% reduction | PENDING_EVIDENCE |
 | Matrix delta | 99.9541% reduction | PENDING_EVIDENCE |
-| Evidence Gateway | 99.4021% event reduction | PENDING_EVIDENCE |
+| Evidence Gateway | 250,000 -> 1,842 events = **99.2632%** reduction | PENDING_EVIDENCE; older 99.4021% claim superseded |
 | Metrica Sports cold | 65.58% reduction | PENDING_EVIDENCE |
 | Metrica Sports warm | 98.54% reduction | PENDING_EVIDENCE |
 | Blackbox 64 MiB cold | 49.5306% reduction | PENDING_EVIDENCE |
 | Blackbox 64 MiB warm | 99.9913% reduction | PENDING_EVIDENCE |
 | WAN true-cold | 6,950 wire bytes | PENDING_EVIDENCE |
+| 100 GiB scale/recovery | 107,374,182,400 -> 14,476,957,280 bytes (~86.52% reduction), two reported restore checks | PENDING_EVIDENCE |
 
 ## GitHub / Kaggle publication gate
 
 Publish sanitized evidence files and verifier instructions on GitHub first. Publish or update a Kaggle dataset/notebook only after checking dataset licensing, private-data removal, and repeatability. State clearly whether each validation occurred locally, on Kaggle, or independently. External evaluators can use a black-box interface or a sealed executable under agreed conditions; the private core is not required for publication.
+
+## Additional public audit references (not competition certifications)
+
+Historical Rhodium Connector Audit (2026-10-06) records the following GitHub Actions links. A successful workflow run alone does not establish independent third-party verification or competition acceptance. Full logs, licensing and verifiers require separate inspection before promotion to EXTERNALLY_VERIFIED.
+
+- Hutter enwik9, run [36989217616](https://github.com/BlackboxLogicCore/rhodium-benchmarks/actions/runs/36989217616): source 1,000,000,000 bytes; archive 356,916,775 bytes; wrapper 2,048 bytes; reported combined 356,918,823 bytes; source/restore SHA-1 match; reported PASS_BIT_EXACT. The audit explicitly says `RHODIUM_STRICT_SELF_CONTAINED_P0_CERTIFIED=NO`. **Do not claim Hutter Prize win or certification**.
+- Fingerprint one-file probe, run [36993722643](https://github.com/BlackboxLogicCore/rhodium-benchmarks/actions/runs/36993722643): source 1,048,576 bytes; fingerprint 7,151 bytes; SHA-256 match; reported bit-identical restore; restore ~62 ms.
+- ULTIMO5 Ubuntu proof, run [36962456220](https://github.com/BlackboxLogicCore/rhodium-benchmarks/actions/runs/36962456220): reported PASS for eBPF/XDP canary, compile/load, SHA-NI availability, zero-copy selftest and lock-free atomic selftest. These are infrastructure tests, **not lossless-compression ratios**.
+
+### Metric correction
+
+An older Evidence Gateway claim used 99.4021%. The source counts 250,000 and 1,842 imply (250000-1842)/250000 * 100 = **99.2632%**, which supersedes that older figure. The numerator is an event-count reduction; do not present it as a byte compression rate.
+
+### Additional claim boundary
+
+The historical 64 MiB Cloudflare *live-source* figures are **not** a controlled direct comparison against Cloudflare's product or a generic ISP speed test. Cold/warm results depend on reuse, cache conditions, source characteristics and test methodology. Externally reproduced evidence remains separate from historical reports.
