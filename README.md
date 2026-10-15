@@ -53,3 +53,5 @@ The public-safe evidence collection now also includes **25 distinct local datase
 [Read the best-of local roundtrip results](benchmarks/RHODIUM-LOCAL-BEST-OF-ROUNDTRIPS-20261015.csv) or the [benchmark families and validation results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv).
 
 These are existing successful local measurements, not newly executed tests or independently certified results. Repeated runs of the same input are represented by one best record; per-dataset rows and benchmark families are distinct categories and should not be summed as independent families. Private Rhodium methods and internals remain excluded.
+
+2026-10-15 historical Desktop reconciliation: the public family index was extended with the sealed Rhodium/MSP360 local cold/delta comparison and the NASA C-MAPSS FD001 local processing result. These are two documented historical successes, not rerun measurements or vendor certifications; underlying benchmark/test conditions and limits appear in the CSV.
