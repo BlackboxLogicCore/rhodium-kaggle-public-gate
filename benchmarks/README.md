@@ -25,3 +25,7 @@ The 2026-10-14 Kaggle-generated-input -> Rhodium local roundtrip is PASS locally
 enwik9/Hutter is deliberately excluded from this public benchmark family. Internal implementation details and unverified historical claims are also excluded.
 
 This is a public evidence index, not a claim of certification or endorsement by NASA, Kaggle, Cloudflare, Google, Meta, Microsoft, EarthScope, USGS, Metrica Sports, or any other named upstream/data provider.
+
+## Recovered dated source report — 2026-10-15
+
+The previously listed 64 MiB Blackbox family now has a public-safe evidence-recovery note: [Recovered local roundtrip and inventory limits](RECOVERED-LOCAL-ROUNDTRIP-2026-10-15.md). This report is a local synthetic loopback measurement, with cold and warm SHA-256 equality **reported by the saved source document**; it is **not** new WAN evidence, independent verification, or a new benchmark family. A historical inventory of candidate files and extracted metrics does not substantiate a claimed count of 100,000+ independent tests.

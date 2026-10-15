@@ -3,3 +3,4 @@ PUBLIC-DISCLOSURE-POLICY.md
 evidence-schema.json
 verify_public_evidence.py
 ALLOWLIST.txt
+benchmarks/RECOVERED-LOCAL-ROUNDTRIP-2026-10-15.md
