@@ -1,82 +1,52 @@
-# Rhodium Germany · Datenoptimierung, Integrität und kontrollierte Automatisierung
+# Rhodium Germany · Die Rhodium Box
 
-## Rhodium Germany in einem Absatz
+**Rhodium Germany · Entwicklungsstand und dokumentierte Ergebnisse · 16.10.2026**
 
-**Daten optimieren. Integrität prüfen. Abläufe kontrollieren.**
+Rhodium Germany entwickelt die Rhodium Box für Datenoptimierung, überprüfbare Wiederherstellung und kontrollierte technische Abläufe. Veröffentlichte Tests dokumentieren konkrete Ergebnisse und ihre Bedingungen. Daraus zeigen wir, welche Anwendungen heute untersucht werden können und welche Entwicklungsmöglichkeiten sich eröffnen.
 
-Rhodium Germany entwickelt und erprobt geschützte Technologien für Datenoptimierung, überprüfbare Wiederherstellung und kontrollierte Systemautomatisierung. Dokumentierte Messwerte, Testbedingungen und SHA-256-Prüfwerte machen die Ergebnisse nachvollziehbar. Unternehmen können den Nutzen in einem abgegrenzten Black-Box-Piloten mit eigenen, freigegebenen Daten prüfen.
+## Vier dokumentierte Arbeitsfelder
 
-### Dokumentierter Nachweisstand
-
-Das öffentliche Register umfasst 63 Positionen: 62 dokumentierte Prüfzwecke und eine Profilübersicht. Die ergänzende Evidence-Datei enthält 22 Messprofile. Daneben stehen 25 nach Eingabe-SHA-256 unterschiedliche Best-of-Datenfälle und 29 historische Nachweiseinträge. Diese Sammlungen überschneiden sich und werden nicht zu einer Gesamtzahl unabhängiger Benchmarks addiert.
-
-[Prüfzwecke und Ergebnisse](benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md) · [Messprofile](public-evidence/2026-10-15-recovered-evidence.json) · [Prüfstatus und Grenzen](EVIDENCE-STATUS.md)
-
-Die Angaben stammen aus gespeicherten Testberichten und Zusammenfassungen. Sie sind keine vollständige unabhängige Produktabnahme. Cold und Warm werden getrennt ausgewiesen; Warm setzt vorhandenen Empfängerzustand voraus. Leistungswerte gelten für das jeweilige Testprofil. Der proprietäre Kern bleibt vertraulich.
-
-Redaktionsstand: **16.10.2026**. Registerstand: **15.10.2026**.
-
-
-
-**[EINZELREGISTER: PRÜFUNGEN UND BESTE DOKUMENTIERTE ERGEBNISSE](benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md)** – einschließlich der bisher zusammengefassten Funktionschecks, des Millionenvorgänge-Lasttests und weiterer wiedergefundener Belege. [Quellenabgleich und verbleibende Lücken](public-evidence/2026-10-15-source-reconciliation.md).
-
-**[PROJEKTVORSTELLUNG: Was ist Rhodium Germany und welchen Wert kann es haben?](START-HIER-RHODIUM-GERMANY.md)** — verständlich für Freunde, Kunden und andere KI-Systeme; ohne Offenlegung des proprietären Kerns.
-
-
-**Weniger Daten übertragen. Wiederherstellung nachvollziehbar belegen.**
-
-Diese öffentliche Sammlung zeigt dokumentierte Ergebnisse zur Datenübertragung, Wiederherstellung und Integrität von Rhodium Germany. Für Kunden ist die entscheidende Frage: **Wie viele Bytes werden im konkreten Anwendungsfall übertragen und bleibt der wiederhergestellte Inhalt identisch?** Hier stehen die Messwerte, SHA‑256-Fingerabdrücke und ihre jeweiligen Prüfgrenzen.
-
-[Ergebnistabelle](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) · [Alle 29 Nachweiseinträge](benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv) · [Prüfstatus](EVIDENCE-STATUS.md) · [Kaggle-Datensatz](https://www.kaggle.com/datasets/kaikuhnert/rhodium-germany-public-benchmark-evidence) · [Website](https://rhodium-germany.de)
-
-## Was veröffentlicht ist
-
-| Sammlung | Inhalt | Einordnung |
+| Arbeitsfeld | Vorhandene Grundlage | Aussagegrenze |
 |---|---|---|
-| 25 Best-of-Datensätze | Originalgröße, beste dokumentierte Cold-/Warm-Bytes, Einsparung, Original-/Restore-SHA‑256 und Berichts-Hash | Historische lokale Berichte; Felder auf innere Konsistenz geprüft |
-| 29 Nachweiseinträge | Datenpfade, Wiederherstellung, Integrität, Live-/WAN-Berichte, Kompatibilität und lokale Vergleiche | Historisches Register mit unterschiedlichem Nachweisumfang |
-| Roundtrip vom 14.10.2026 | Kaggle-generierte Eingabe → lokaler Rhodium-Lauf → dokumentierte Wiederherstellung | Lokaler PASS dokumentiert; unabhängige Rückprüfung auf Kaggle offen |
+| Datenfluss optimieren | Datenpfade mit gemessenen Eingabe- und Übertragungsmengen | Cold und Warm unterscheiden; Messgrenze und Empfängerzustand berücksichtigen |
+| Wiederherstellung prüfen | Original-/Restore-Prüfwerte; ausgewählte dokumentierte Bytevergleiche | Gespeicherte Berichte und unabhängige Neuberechnung unterscheiden |
+| Technische Aktionen kontrollieren | Lokale Freigabe- und Werkzeugaktions-Abweisungstests | Gilt für den jeweiligen Adapter und Ablauf |
+| Abläufe nachvollziehen | Deterministische Replay-Tests | Keine pauschale Abnahme aller Automatisierungsfunktionen |
 
-Die Sammlungen überschneiden sich. **29 + 25 sind keine 54 unabhängigen Benchmarks.** Diese Veröffentlichung ist keine Bestätigung eines vollständig ausgelesenen historischen Archivs oder eines unabhängig geprüften Gesamtsystems.
+## Was öffentlich dokumentiert ist
 
-## Beispiele aus den gespeicherten lokalen Berichten
+- **62 Prüfzwecke** und **eine zusätzliche Profilübersicht** im [Einzelregister](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md).
+- **22 Messprofile** im [ergänzenden Evidence-JSON](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/public-evidence/2026-10-15-recovered-evidence.json).
+- **25 Best-of-Datenfälle**, nach Eingabe-SHA-256 unterschieden, in den [Ergebnissen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md).
+- **29 historische Nachweiseinträge** im [Familienregister](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv).
 
-| Datensatz | Original | Cold: übertragene Bytes | Cold-Einsparung | Warm: übertragene Bytes | Warm-Einsparung |
-|---|---:|---:|---:|---:|---:|
-| Blackbox / Matrix local 64 MiB | 67.108.864 B | 33.869.410 B | 49,5306 % | 5.827 B | 99,9913 % |
-| Matrix local 8 GiB | 8.589.934.592 B | 4.334.824.636 B | 49,5360 % | 696.713 B | 99,9919 % |
-| Robotics AGIBOT sample 64 MiB | 67.108.864 B | 67.018.034 B | 0,1353 % | 5.827 B | 99,9913 % |
+Registerstand: 15.10.2026. Diese Sammlungen überschneiden sich und werden getrennt gezählt. Historische Testberichte sind keine vollständige unabhängige Produktabnahme. Der vollständige Abschluss aller historischen Originalbestände ist weiterhin offen.
 
-Alle drei Zeilen enthalten in den gespeicherten Berichten übereinstimmende Original-/Restore-SHA‑256. Sie zeigen auch, dass die Cold-Einsparung vom Datensatz abhängt. **Warm nutzt vorhandenen Zustand am Empfänger und ist kein Ersttransfer.** Die Byte-Messpunkte sind testspezifisch; ein Warm-Wert ist keine allgemeine Kompressionsgarantie.
+## Beispiel: Übertragungsmenge und Wiederherstellung
 
-→ [Alle 25 Datensätze mit vollständigen SHA‑256-Werten](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md)
+Der gespeicherte lokale 64-MiB-Fall dokumentiert **67.108.864 B Eingabe**, **33.869.410 B Cold-Wire** und **5.827 B Warm-Wire**. Der Bericht enthält übereinstimmende Original-/Restore-SHA-256-Werte. Warm nutzt vorhandenen Empfängerzustand.
 
-## Was das für Kunden bedeutet
+Beim AGIBOT-Beispielfall mit ebenfalls 67.108.864 B Eingabe stehen **67.018.034 B Cold-Wire** und **5.827 B Warm-Wire**. Die unterschiedlichen Cold-Ergebnisse zeigen, warum der konkrete Datensatz und die Messbedingungen entscheidend sind. Eine universelle Reduktionsrate ist daraus nicht ableitbar.
 
-Bei wiederkehrenden oder ähnlichen Daten können geringere Übertragungsmengen Bandbreite und Übertragungsaufwand reduzieren. Die tatsächliche Ersparnis hängt von Daten, Empfängerzustand und Messgrenze ab. Ob daraus im eigenen Betrieb Zeit- oder Kostenvorteile entstehen, muss am eigenen Anwendungsfall gemessen werden.
+## Ein Vorgeschmack auf mögliche Anwendungen
 
-Die Veröffentlichung unterscheidet Übertragungsmengen, Ereignisfilterung, Verarbeitungsdurchsatz und Build-/Kompatibilitätstests. Diese Größen werden nicht zu einer gemeinsamen Leistungszahl zusammengerechnet. Produktnamen und Datenquellen bezeichnen den jeweiligen Testkontext, keine Kundenbeziehung oder Empfehlung durch den genannten Anbieter.
+| Entwicklungsrichtung | Zu untersuchende Fragestellung |
+|---|---|
+| Archive und wiederkehrende Übertragungen | Welche Übertragungsmenge bleibt einschließlich nötiger Zusatzdaten, und gelingt die Wiederherstellung? |
+| Telemetrie und Sensorik | Lassen sich Datenfluss und nachvollziehbare Verarbeitung verbinden, ohne erforderliche Inhalte zu verlieren? |
+| KI- und API-Abläufe | Können Freigaben und Zielaktionen im konkreten System kontrolliert und nachgewiesen werden? |
+| Software-, Infrastruktur- und Edge-Integration | Welche Anbindung, Ressourcen und Betriebsbedingungen sind erforderlich? |
 
-## So lassen sich die Nachweise einordnen und prüfen
+Diese Richtungen beschreiben Potenziale. Sie sind keine pauschale Zusage für einen bestimmten Betrieb. Aus einer konkreten technischen Frage kann eine gemeinsame Untersuchung oder Integrationsentwicklung entstehen.
 
-1. Datensatz in der [Ergebnistabelle](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) oder im [Familienregister](benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv) auswählen.
-2. In [Prüfstatus und Grenzen](EVIDENCE-STATUS.md) nachlesen, ob ein historischer Bericht, eine Konsistenzprüfung oder eine unabhängige Reproduktion vorliegt.
-3. Bytewerte und Prozentrechnung mit der [Prüfanleitung](PUBLIC-BENCHMARK-VERIFICATION.md) nachvollziehen.
-4. Für eine unabhängige Inhaltsprüfung Original und zurückgelieferte Datei separat vergleichen. Ein veröffentlichter Hash allein ersetzt diese Prüfung nicht.
+## Eine technische Frage ist der Anfang
 
-## English overview
+Interessant sind Datenart, heutiger Ablauf und gewünschte Wirkung. Dazu werden passende vorhandene Nachweise eingeordnet und offene Anforderungen benannt. Vertrauliche Originaldaten und Zugangsdaten gehören nicht in eine erste Nachricht.
 
-Rhodium Germany publishes historical measurements for transfer volume, reconstruction and integrity. This repository contains **25 SHA-distinct local best-of records**, **29 benchmark/proof/validation entries**, and a machine-readable local roundtrip record. Entries overlap and are not a count of independent benchmark executions.
+[Box und Kontakt](https://rhodium-germany.de/pages/rhodium-box) · [Kontakt](https://rhodium-germany.de/pages/kontakt)
 
-Cold and warm results are stated separately. Warm results use prior receiver state. Stored matching hashes and report checks are distinguished from independent payload verification. The returned artifact from the Kaggle-generated-input roundtrip has **not yet completed independent Kaggle verification**.
+## Öffentliche Nachweise und geschützte Umsetzung
 
-Start with the [results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md), [evidence status](EVIDENCE-STATUS.md), [data dictionary](benchmarks/DATA-DICTIONARY.md) and [verification guide](PUBLIC-BENCHMARK-VERIFICATION.md).
+Öffentlich stehen Nutzen, dokumentierte Messwerte und Nachweisgrenzen im Mittelpunkt. Die proprietäre Umsetzung und vertrauliche Daten bleiben geschützt. P=0 ist eine Ziel- und Freigabevorgabe; die vorliegenden Unterlagen begründen keine allgemeine mathematische Garantie absoluter Fehlerfreiheit.
 
-## Projekt und Veröffentlichungsumfang
-
-**Rhodium Germany · Kai Kuhnert**  
-Website: [rhodium-germany.de](https://rhodium-germany.de)  
-Dokumentationsstand: **15.10.2026**. Datensatzdatum und Laufdatum sind getrennt zu betrachten.
-
-Veröffentlicht werden Ergebnisse, Referenzen und ausdrücklich freigegebene Prüfhilfen. Der proprietäre Kern, interne Verfahren, Schlüssel und Kundeneingaben gehören nicht zu dieser Veröffentlichung. Siehe [Veröffentlichungsrichtlinie](PUBLIC-DISCLOSURE-POLICY.md). Es wird keine neue Lizenz für Software oder zugrunde liegende Eingabedaten erteilt; siehe [Nutzung und Datenherkunft](benchmarks/DATA-DICTIONARY.md#use-and-provenance).
-
+[Prüfstatus](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/EVIDENCE-STATUS.md) · [Gegenprüfung](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-BENCHMARK-VERIFICATION.md) · [Veröffentlichungsgrenzen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-DISCLOSURE-POLICY.md)
