@@ -1,8 +1,14 @@
 # Rhodium Germany — Was wurde aufgebaut, und welchen Wert kann es haben?
 
-**Öffentliche, verständliche Projektvorstellung | Stand: 15. Oktober 2026**
+**Öffentliche, verständliche Projektvorstellung | Stand: 16. Oktober 2026**
 
-**Ein Satz:** Rhodium Germany entwickelt und erprobt eine technische Lösung, die bei geeigneten Datenübertragungen weniger Bytes bewegt, den Empfängerzustand berücksichtigen kann und die exakte Wiederherstellung anhand kryptografischer Fingerabdrücke dokumentiert.
+**Projektbeschreibung:** Rhodium Germany entwickelt und erprobt geschützte Technologien für Datenoptimierung, überprüfbare Wiederherstellung und kontrollierte Systemautomatisierung. Dokumentierte Messwerte, Testbedingungen und SHA-256-Prüfwerte machen die Ergebnisse nachvollziehbar. Unternehmen können den Nutzen in einem abgegrenzten Black-Box-Piloten mit eigenen, freigegebenen Daten prüfen.
+
+**Dokumentierter Nachweisstand:** Das öffentliche Register umfasst 63 Positionen: 62 dokumentierte Prüfzwecke und eine Profilübersicht. Die ergänzende Evidence-Datei enthält 22 Messprofile. Daneben stehen 25 nach Eingabe-SHA-256 unterschiedliche Best-of-Datenfälle und 29 historische Nachweiseinträge. Diese Sammlungen überschneiden sich und werden nicht zu einer Gesamtzahl unabhängiger Benchmarks addiert.
+
+[Alle Prüfzwecke](benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md) · [Messprofile](public-evidence/2026-10-15-recovered-evidence.json)
+
+Die Angaben stammen aus gespeicherten Testberichten und Zusammenfassungen. Sie sind keine vollständige unabhängige Produktabnahme. Cold und Warm werden getrennt ausgewiesen; Warm setzt vorhandenen Empfängerzustand voraus. Leistungswerte gelten für das jeweilige Testprofil. Der proprietäre Kern bleibt vertraulich.
 
 > **Für Freunde, Interessenten, Unternehmen und andere KI-Systeme:** Diese Seite erklärt den belegbaren Nutzen und führt zu konkreten Messungen. Sie enthält **keine** Anleitung zur Nachbildung des proprietären Rhodium-Kerns.
 
