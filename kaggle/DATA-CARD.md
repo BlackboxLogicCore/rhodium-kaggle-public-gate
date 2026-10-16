@@ -2,6 +2,16 @@
 
 Historical transfer measurements, restoration fingerprints and explicit verification scope.
 
+## Project description
+
+Rhodium Germany develops and tests protected technologies for data optimization, verifiable reconstruction and controlled system automation. Documented measurements, test conditions and SHA-256 fingerprints make the reported results traceable. Companies can evaluate their own authorized data in a scoped black-box pilot.
+
+The current GitHub register contains **63 entries: 62 documented test purposes and one profile summary**, with **22 additional measurement profiles** in its evidence JSON. The 25 best-of input records and 29 historical evidence entries overlap with this register. These figures must not be added as independent benchmark counts. Source register date: **2026-10-15**.
+
+[Current test register](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md) · [Measurement profiles](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/public-evidence/2026-10-15-recovered-evidence.json)
+
+This data card is maintained in GitHub. A change to this file alone does not update or verify the live Kaggle dataset. Dataset file availability must be checked separately.
+
 ## Overview
 
 This dataset publishes Rhodium Germany's stored benchmark-result summaries for readers evaluating transfer volume and lossless reconstruction. It contains **25 best-of records grouped by distinct input SHA‑256** and a **29-entry register of historical benchmark, proof and validation families**. The groups overlap; they are not 54 independent benchmarks.
@@ -74,4 +84,4 @@ The existing license category is “Other (specified in description)”; it must
 
 Maintainer: **Rhodium Germany · Kai Kuhnert**.  
 Canonical publication: [GitHub evidence repository](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate).  
-Documentation date: **2026-10-15**.
+Documentation date: **2026-10-16**.
