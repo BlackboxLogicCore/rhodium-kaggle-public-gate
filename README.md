@@ -1,4 +1,22 @@
-# Rhodium Germany · Benchmark Evidence
+# Rhodium Germany · Datenoptimierung, Integrität und kontrollierte Automatisierung
+
+## Rhodium Germany in einem Absatz
+
+**Daten optimieren. Integrität prüfen. Abläufe kontrollieren.**
+
+Rhodium Germany entwickelt und erprobt geschützte Technologien für Datenoptimierung, überprüfbare Wiederherstellung und kontrollierte Systemautomatisierung. Dokumentierte Messwerte, Testbedingungen und SHA-256-Prüfwerte machen die Ergebnisse nachvollziehbar. Unternehmen können den Nutzen in einem abgegrenzten Black-Box-Piloten mit eigenen, freigegebenen Daten prüfen.
+
+### Dokumentierter Nachweisstand
+
+Das öffentliche Register umfasst 63 Positionen: 62 dokumentierte Prüfzwecke und eine Profilübersicht. Die ergänzende Evidence-Datei enthält 22 Messprofile. Daneben stehen 25 nach Eingabe-SHA-256 unterschiedliche Best-of-Datenfälle und 29 historische Nachweiseinträge. Diese Sammlungen überschneiden sich und werden nicht zu einer Gesamtzahl unabhängiger Benchmarks addiert.
+
+[Prüfzwecke und Ergebnisse](benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md) · [Messprofile](public-evidence/2026-10-15-recovered-evidence.json) · [Prüfstatus und Grenzen](EVIDENCE-STATUS.md)
+
+Die Angaben stammen aus gespeicherten Testberichten und Zusammenfassungen. Sie sind keine vollständige unabhängige Produktabnahme. Cold und Warm werden getrennt ausgewiesen; Warm setzt vorhandenen Empfängerzustand voraus. Leistungswerte gelten für das jeweilige Testprofil. Der proprietäre Kern bleibt vertraulich.
+
+Redaktionsstand: **16.10.2026**. Registerstand: **15.10.2026**.
+
+
 
 **[EINZELREGISTER: PRÜFUNGEN UND BESTE DOKUMENTIERTE ERGEBNISSE](benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md)** – einschließlich der bisher zusammengefassten Funktionschecks, des Millionenvorgänge-Lasttests und weiterer wiedergefundener Belege. [Quellenabgleich und verbleibende Lücken](public-evidence/2026-10-15-source-reconciliation.md).
 
