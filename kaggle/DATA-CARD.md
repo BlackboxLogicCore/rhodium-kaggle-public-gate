@@ -4,7 +4,7 @@ Historical transfer measurements, restoration fingerprints and explicit verifica
 
 ## Project description
 
-Rhodium Germany develops and tests protected technologies for data optimization, verifiable reconstruction and controlled system automation. Documented measurements, test conditions and SHA-256 fingerprints make the reported results traceable. Companies can evaluate their own authorized data in a scoped black-box pilot.
+Rhodium Germany develops the Rhodium Box for data optimization, verifiable reconstruction and controlled technical workflows. Published tests document specific results and their conditions. These records illustrate the applications that can be investigated today and the development directions that may follow.
 
 The current GitHub register contains **63 entries: 62 documented test purposes and one profile summary**, with **22 additional measurement profiles** in its evidence JSON. The 25 best-of input records and 29 historical evidence entries overlap with this register. These figures must not be added as independent benchmark counts. Source register date: **2026-10-15**.
 
