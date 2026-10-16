@@ -15,3 +15,8 @@ public-evidence/2026-10-14-kaggle-rhodium-roundtrip.json
 public-evidence/2026-10-15-historical-inventory-status.md
 verify_public_evidence.py
 verify_return.py
+START-HIER-RHODIUM-GERMANY.md
+benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md
+benchmarks/RHODIUM-ALL-DISTINCT-TESTS.csv
+public-evidence/2026-10-15-recovered-evidence.json
+public-evidence/2026-10-15-source-reconciliation.md
