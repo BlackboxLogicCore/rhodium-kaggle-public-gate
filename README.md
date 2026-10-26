@@ -1,8 +1,8 @@
 # Rhodium Germany · Die Rhodium Box
 
-**Rhodium Germany · Entwicklungsstand und dokumentierte Ergebnisse · 16.10.2026**
+**Rhodium Germany · Lizenzangebot und dokumentierte Ergebnisse · 26.10.2026**
 
-Rhodium Germany entwickelt die Rhodium Box für Datenoptimierung, überprüfbare Wiederherstellung und kontrollierte technische Abläufe. Veröffentlichte Tests dokumentieren konkrete Ergebnisse und ihre Bedingungen. Daraus zeigen wir, welche Anwendungen heute untersucht werden können und welche Entwicklungsmöglichkeiten sich eröffnen.
+Rhodium Germany bietet die fertige, proprietäre Arbeiterbox zur Datenverarbeitung und überprüfbaren Wiederherstellung zur Lizenzierung an. Gesucht werden Lizenz- und Vertriebspartner für Archivierung, Backup-Verifikation sowie Forensik und Audit. Grundlage des Angebots sind die vorhandenen dokumentierten Nachweise.
 
 ## Vier dokumentierte Arbeitsfelder
 
@@ -37,16 +37,18 @@ Beim AGIBOT-Beispielfall mit ebenfalls 67.108.864 B Eingabe stehen **67.018.034 
 | KI- und API-Abläufe | Können Freigaben und Zielaktionen im konkreten System kontrolliert und nachgewiesen werden? |
 | Software-, Infrastruktur- und Edge-Integration | Welche Anbindung, Ressourcen und Betriebsbedingungen sind erforderlich? |
 
-Diese Richtungen beschreiben Potenziale. Sie sind keine pauschale Zusage für einen bestimmten Betrieb. Aus einer konkreten technischen Frage kann eine gemeinsame Untersuchung oder Integrationsentwicklung entstehen.
+Diese Richtungen beschreiben Potenziale. Sie sind keine pauschale Zusage für einen bestimmten Betrieb. Diese zusätzlichen Entwicklungsrichtungen sind vom aktuellen Lizenzangebot für Archivierung, Backup-Verifikation sowie Forensik und Audit getrennt.
 
-## Eine technische Frage ist der Anfang
 
-Interessant sind Datenart, heutiger Ablauf und gewünschte Wirkung. Dazu werden passende vorhandene Nachweise eingeordnet und offene Anforderungen benannt. Vertrauliche Originaldaten und Zugangsdaten gehören nicht in eine erste Nachricht.
+## Lizenzangebot und Gebote
 
-[Box und Kontakt](https://rhodium-germany.de/pages/rhodium-box) · [Kontakt](https://rhodium-germany.de/pages/kontakt)
+Angeboten werden vertraglich definierte Nutzungs- und Vertriebsrechte an der Arbeiterbox. Einsatzfeld, Märkte, Laufzeit und Vergütung werden vereinbart. Quellcode, Matrix-Interna, Schlüssel und Eigentumsanteile bleiben bei Kai Kuhnert.
+
+Kontakt für Lizenzanfragen und Gebote: **info@rhodium-germany.tech**. Bitte nennen Sie den gewünschten Nutzungsumfang und die vorgesehenen Märkte. Die vorhandenen Nachweise bilden die Grundlage des Angebots; Rhodium bietet keinen zusätzlichen Test- oder Gegentest-Service an.
+
 
 ## Öffentliche Nachweise und geschützte Umsetzung
 
 Öffentlich stehen Nutzen, dokumentierte Messwerte und Nachweisgrenzen im Mittelpunkt. Die proprietäre Umsetzung und vertrauliche Daten bleiben geschützt. P=0 ist eine Ziel- und Freigabevorgabe; die vorliegenden Unterlagen begründen keine allgemeine mathematische Garantie absoluter Fehlerfreiheit.
 
-[Prüfstatus](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/EVIDENCE-STATUS.md) · [Gegenprüfung](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-BENCHMARK-VERIFICATION.md) · [Veröffentlichungsgrenzen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-DISCLOSURE-POLICY.md)
+[Prüfstatus](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/EVIDENCE-STATUS.md) · [Veröffentlichungsgrenzen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-DISCLOSURE-POLICY.md)
