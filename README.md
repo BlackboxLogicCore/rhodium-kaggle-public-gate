@@ -52,3 +52,7 @@ Kontakt für Lizenzanfragen und Gebote: **info@rhodium-germany.tech**. Bitte nen
 Öffentlich stehen Nutzen, dokumentierte Messwerte und Nachweisgrenzen im Mittelpunkt. Die proprietäre Umsetzung und vertrauliche Daten bleiben geschützt. P=0 ist eine Ziel- und Freigabevorgabe; die vorliegenden Unterlagen begründen keine allgemeine mathematische Garantie absoluter Fehlerfreiheit.
 
 [Prüfstatus](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/EVIDENCE-STATUS.md) · [Veröffentlichungsgrenzen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-DISCLOSURE-POLICY.md)
+
+## Ergänztes Register externer und großer Prüfungen (02.11.2026)
+
+[Historische externe Runner-, Kaggle-, HTTPS- und 1–8-GiB-Prüfungen](benchmarks/RHODIUM-EXTERNAL-AND-LARGE-TESTS-20261102.md) sind nun zusätzlich mit ihren konkreten Aussagegrenzen verlinkt. Diese Einträge ergänzen die bestehenden Register als **Querverweise**, nicht als neu durchgeführte oder pauschal zusätzlich gezählte Benchmarks. Private Quellberichte und die geschützte Implementierung bleiben außerhalb dieses öffentlichen Repositories.
