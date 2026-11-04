@@ -8,9 +8,9 @@ Rhodium Germany bietet die fertige, proprietäre Arbeiterbox zur Datenverarbeitu
 
 Die Arbeiterbox ist für überprüfbare Datenwiederherstellung in Archivierung, Backup-Verifikation sowie Forensik und Audit vorgesehen. Das [öffentliche Prüfregister](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) zeigt dokumentierte Wiederherstellungen mit übereinstimmenden SHA-256-Prüfsummen und beschreibt die jeweiligen Testbedingungen.
 
-Der Direktbezug für den Betrieb im eigenen Unternehmen wird nach Freigabe des Kundenpakets und Prüfung des Bestellablaufs geöffnet. Die nachstehenden Angaben zu Lizenz- und Vertriebspartnern betreffen gesonderte Vereinbarungen.
+Unternehmen erhalten einen eigenen Rhodium-Zugang für ihren Einsatzbereich. Darüber können sie die jeweils freigegebenen Funktionen der Arbeiterbox nutzen. Die automatische Freischaltung dieser Zugänge ist in Vorbereitung. Die nachstehenden Angaben zu Lizenz- und Vertriebspartnern betreffen gesonderte Vereinbarungen.
 
-**English.** Rhodium Arbeiterbox is designed for verifiable data recovery in archiving, backup verification, forensics and audit. See the [documented recovery results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) for matching source and restore checksums and the conditions of each test. Self-service licensing and downloads will open after release and checkout verification.
+**English.** Rhodium Arbeiterbox is designed for verifiable data recovery in archiving, backup verification, forensics and audit. See the [documented recovery results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) for matching source and restore checksums and the conditions of each test. Companies will use the functions enabled for their use case through a dedicated Rhodium access point. Automated activation is in preparation.
 
 ## Vier dokumentierte Arbeitsfelder
 
