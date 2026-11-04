@@ -4,6 +4,14 @@
 
 Rhodium Germany bietet die fertige, proprietäre Arbeiterbox zur Datenverarbeitung und überprüfbaren Wiederherstellung zur Lizenzierung an. Gesucht werden Lizenz- und Vertriebspartner für Archivierung, Backup-Verifikation sowie Forensik und Audit. Grundlage des Angebots sind die vorhandenen dokumentierten Nachweise.
 
+## Rhodium Arbeiterbox · Product overview
+
+Die Arbeiterbox ist für überprüfbare Datenwiederherstellung in Archivierung, Backup-Verifikation sowie Forensik und Audit vorgesehen. Das [öffentliche Prüfregister](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) zeigt dokumentierte Wiederherstellungen mit übereinstimmenden SHA-256-Prüfsummen und beschreibt die jeweiligen Testbedingungen.
+
+Der Direktbezug für den Betrieb im eigenen Unternehmen wird nach Freigabe des Kundenpakets und Prüfung des Bestellablaufs geöffnet. Die nachstehenden Angaben zu Lizenz- und Vertriebspartnern betreffen gesonderte Vereinbarungen.
+
+**English.** Rhodium Arbeiterbox is designed for verifiable data recovery in archiving, backup verification, forensics and audit. See the [documented recovery results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) for matching source and restore checksums and the conditions of each test. Self-service licensing and downloads will open after release and checkout verification.
+
 ## Vier dokumentierte Arbeitsfelder
 
 | Arbeitsfeld | Vorhandene Grundlage | Aussagegrenze |
@@ -49,7 +57,7 @@ Kontakt für Lizenzanfragen und Gebote: **info@rhodium-germany.tech**. Bitte nen
 
 ## Öffentliche Nachweise und geschützte Umsetzung
 
-Öffentlich stehen Nutzen, dokumentierte Messwerte und Nachweisgrenzen im Mittelpunkt. Die proprietäre Umsetzung und vertrauliche Daten bleiben geschützt. P=0 ist eine Ziel- und Freigabevorgabe; die vorliegenden Unterlagen begründen keine allgemeine mathematische Garantie absoluter Fehlerfreiheit.
+Öffentlich stehen Nutzen, dokumentierte Messwerte und Nachweisgrenzen im Mittelpunkt. Die proprietäre Umsetzung und vertrauliche Daten bleiben geschützt. Die Prüfergebnisse gelten für die jeweils dokumentierten Testbedingungen.
 
 [Prüfstatus](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/EVIDENCE-STATUS.md) · [Veröffentlichungsgrenzen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-DISCLOSURE-POLICY.md)
 
