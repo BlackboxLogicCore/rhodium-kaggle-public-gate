@@ -64,3 +64,9 @@ Kontakt für Lizenzanfragen und Gebote: **info@rhodium-germany.tech**. Bitte nen
 ## Ergänztes Register externer und großer Prüfungen (02.11.2026)
 
 [Historische externe Runner-, Kaggle-, HTTPS- und 1–8-GiB-Prüfungen](benchmarks/RHODIUM-EXTERNAL-AND-LARGE-TESTS-20261102.md) sind nun zusätzlich mit ihren konkreten Aussagegrenzen verlinkt. Diese Einträge ergänzen die bestehenden Register als **Querverweise**, nicht als neu durchgeführte oder pauschal zusätzlich gezählte Benchmarks. Private Quellberichte und die geschützte Implementierung bleiben außerhalb dieses öffentlichen Repositories.
+
+## Aktuelle technische Nachweise (November 2026)
+
+Ergaenzend zum historischen Register wurden lokal ein vollstaendiger 1.000.000.000-Byte-Streaming-Wiederherstellungscheck mit uebereinstimmender SHA-256-Pruefsumme sowie ein isolierter deterministischer Agentenketten-Test mit 15 Prozessen und 14 Uebergaben beobachtet. Diese neueren Pruefungen sind noch keine unabhaengigen Cloud-Zertifizierungen oder Wettbewerbswertungen. Sie werden bis zur veroeffentlichungsfaehigen Gegenpruefung getrennt vom historischen Register gefuehrt.
+
+Fuer potenzielle Partner stehen Datenintegritaet, Backup-Verifikation, nachvollziehbare Verarbeitung und kontrollierte Schnittstellen im Mittelpunkt. Proprietare Algorithmen, private Boxen, Schluessel und Kundendaten werden nicht veroeffentlicht. Anfragen bitte ausschliesslich schriftlich an die oben genannte Kontaktadresse.
