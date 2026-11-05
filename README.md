@@ -12,6 +12,8 @@ Unternehmen erhalten einen eigenen Rhodium-Zugang für ihren Einsatzbereich. Dar
 
 **English.** Rhodium Arbeiterbox is designed for verifiable data recovery in archiving, backup verification, forensics and audit. See the [documented recovery results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) for matching source and restore checksums and the conditions of each test. Companies will use the functions enabled for their use case through a dedicated Rhodium access point. Automated activation is in preparation.
 
+**Benchmark-Familien auf einen Blick:** [Zentrale öffentliche Übersicht mit Nachweislinks](BENCHMARK-FAMILIES-OVERVIEW.md). Die Übersicht fasst vorhandene Familien zusammen und trennt dokumentierte Ergebnisse von noch offenen Verifikationen.
+
 ## Vier dokumentierte Arbeitsfelder
 
 | Arbeitsfeld | Vorhandene Grundlage | Aussagegrenze |
