@@ -1,0 +1,48 @@
+name: Rhodium enwik9 independent free runner
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  enwik9-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Fetch official public enwik9 archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 2 --max-time 900 -o enwik9.zip https://mattmahoney.net/dc/enwik9.zip
+          unzip -p enwik9.zip enwik9 > enwik9
+          test "$(wc -c < enwik9)" -eq 1000000000
+          echo "SOURCE_SHA256=$(sha256sum enwik9 | cut -d' ' -f1)" >> "$GITHUB_ENV"
+      - name: Two independent streaming roundtrips
+        shell: python
+        run: |
+          import hashlib, pathlib, tempfile, zlib, time
+          source = pathlib.Path("enwik9")
+          reference = hashlib.file_digest(source.open("rb"), "sha256").hexdigest()
+          expected = "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc"
+          assert reference == expected, f"UNEXPECTED_SOURCE_HASH {reference}"
+          for run in (1, 2):
+              t0 = time.monotonic()
+              h = hashlib.sha256()
+              n = 0
+              compressed_bytes = 0
+              with source.open("rb") as f:
+                  compressor = zlib.compressobj(level=3)
+                  decoder = zlib.decompressobj()
+                  while chunk := f.read(1024 * 1024):
+                      encoded = compressor.compress(chunk)
+                      compressed_bytes += len(encoded)
+                      restored = decoder.decompress(encoded)
+                      h.update(restored)
+                      n += len(restored)
+                  encoded = compressor.flush()
+                  compressed_bytes += len(encoded)
+                  restored = decoder.decompress(encoded) + decoder.flush()
+                  h.update(restored)
+                  n += len(restored)
+              assert n == 1000000000 and h.hexdigest() == reference
+              print(f"RUN={run} PASS=true BYTES={n} SHA256={h.hexdigest()} COMPRESSED_BYTES={compressed_bytes} SECONDS={time.monotonic()-t0:.3f}",flush=True)
+          print("SCOPE=public enwik9 streaming zlib reference; not Rhodium proprietary codec; not Hutter submission")
