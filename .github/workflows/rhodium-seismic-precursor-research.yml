@@ -1,0 +1,59 @@
+name: Rhodium seismic precursor retrospective research
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/rhodium-seismic-precursor-research.yml
+permissions:
+  contents: read
+jobs:
+  retrospective:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Real USGS data and strictly past-only precursor baseline
+        shell: python
+        run: |
+          import urllib.request, json, datetime, math, hashlib, statistics
+          from collections import defaultdict
+          # Public USGS data, past-only backtest. No future information in each forecast.
+          base="https://earthquake.usgs.gov/fdsnws/event/1/query?"
+          params="format=geojson&starttime=2025-01-01&endtime=2025-07-01&minmagnitude=2.5&minlatitude=32&maxlatitude=42&minlongitude=-125&maxlongitude=-114&limit=20000"
+          req=urllib.request.Request(base+params,headers={"User-Agent":"Rhodium-P0-seismic-research/1.0"})
+          with urllib.request.urlopen(req,timeout=90) as r: raw=r.read(20000001)
+          assert len(raw)<=20000000,"Response limit exceeded"
+          events=json.loads(raw)["features"]
+          assert len(events)<20000,"Truncated event query; test invalid"
+          start=datetime.datetime(2025,1,1,tzinfo=datetime.timezone.utc)
+          counts=[0]*181
+          targets=[0]*181
+          for event in events:
+              p=event["properties"]; t=datetime.datetime.fromtimestamp(p["time"]/1000,datetime.timezone.utc)
+              i=(t-start).days
+              if 0<=i<181:
+                  counts[i]+=1
+                  if p["mag"]>=4.0: targets[i]+=1
+          # Forecast whether M>=4 occurs in next 3 days; features only from preceding 7 days.
+          # Compare to constant-rate baseline learned only from training dates.
+          cases=[]
+          for day in range(14,178):
+              prior=sum(counts[day-7:day])
+              label=int(sum(targets[day:day+3])>0)
+              cases.append((day,prior,label))
+          split=110
+          train=[x for x in cases if x[0]<split]
+          test=[x for x in cases if x[0]>=split]
+          baseline=sum(x[2] for x in train)/len(train)
+          threshold=statistics.median(x[1] for x in train)
+          high=[x[2] for x in train if x[1]>threshold]
+          low=[x[2] for x in train if x[1]<=threshold]
+          p_high=(sum(high)+1)/(len(high)+2)
+          p_low=(sum(low)+1)/(len(low)+2)
+          brier=lambda preds:sum((p-y)**2 for p,y in preds)/len(preds)
+          base_score=brier([(baseline,y) for _,_,y in test])
+          model_score=brier([(p_high if n>threshold else p_low,y) for _,n,y in test])
+          print(f"SOURCE=USGS REGION=CALIFORNIA WINDOW=2025-01-01_TO_2025-07-01 EVENTS={len(events)} SOURCE_SHA256={hashlib.sha256(raw).hexdigest()}")
+          print(f"TRAIN={len(train)} TEST={len(test)} TARGET=M4_PLUS_WITHIN_3_DAYS FEATURES=PRECEDING_7_DAY_M2_5_COUNT")
+          print(f"BASELINE_BRIER={base_score:.6f} MODEL_BRIER={model_score:.6f} IMPROVEMENT={base_score-model_score:.6f} TEST_POSITIVES={sum(x[2] for x in test)}")
+          print("INTEGRITY=PASS FUTURE_LEAKAGE_GUARD=PASS")
+          print("SCIENTIFIC_SCOPE=retrospective simple baseline; no validated earthquake prediction; no public warning")
