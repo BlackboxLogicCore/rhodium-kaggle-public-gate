@@ -1,6 +1,9 @@
 name: Rhodium enwik9 independent free runner
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/rhodium-enwik9-free-live.yml
 permissions:
   contents: read
 jobs:
@@ -19,7 +22,7 @@ jobs:
       - name: Two independent streaming roundtrips
         shell: python
         run: |
-          import hashlib, pathlib, tempfile, zlib, time
+          import hashlib, pathlib, zlib, time
           source = pathlib.Path("enwik9")
           reference = hashlib.file_digest(source.open("rb"), "sha256").hexdigest()
           expected = "159b85351e5f76e60cbe32e04c677847a9ecba3adc79addab6f4c6c7aa3744bc"
