@@ -1,74 +1,23 @@
-# Rhodium Germany · Die Rhodium Box
+# Rhodium Germany
 
-**Rhodium Germany · Lizenzangebot und dokumentierte Ergebnisse · 26.10.2026**
+**Sicherheit · Datenintegrität · Wiederherstellung**
 
-Rhodium Germany bietet die fertige, proprietäre Arbeiterbox zur Datenverarbeitung und überprüfbaren Wiederherstellung zur Lizenzierung an. Gesucht werden Lizenz- und Vertriebspartner für Archivierung, Backup-Verifikation sowie Forensik und Audit. Grundlage des Angebots sind die vorhandenen dokumentierten Nachweise.
+Rhodium Germany entwickelt technische Lösungen zur Kontrolle digitaler Schnittstellen, zur Optimierung geeigneter Datenprozesse sowie zur nachvollziehbaren Wiederherstellung und Integritätsprüfung. Informationen zu individuellen Anwendungen, Partnerschaften und Verfügbarkeit erhalten Interessenten schriftlich.
 
-## Rhodium Arbeiterbox · Product overview
+## Ausgewählte Best-of-Ergebnisse
 
-Die Arbeiterbox ist für überprüfbare Datenwiederherstellung in Archivierung, Backup-Verifikation sowie Forensik und Audit vorgesehen. Das [öffentliche Prüfregister](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) zeigt dokumentierte Wiederherstellungen mit übereinstimmenden SHA-256-Prüfsummen und beschreibt die jeweiligen Testbedingungen.
+Unsere öffentliche Kundenübersicht zeigt nur wenige bereits dokumentierte Testergebnisse und deren Aussagegrenzen. Interne Implementierung, private Komponenten, technische Betriebsdetails, Zugangsdaten und Kundendaten werden nicht offengelegt.
 
-Unternehmen erhalten einen eigenen Rhodium-Zugang für ihren Einsatzbereich. Darüber können sie die jeweils freigegebenen Funktionen der Arbeiterbox nutzen. Die automatische Freischaltung dieser Zugänge ist in Vorbereitung. Die nachstehenden Angaben zu Lizenz- und Vertriebspartnern betreffen gesonderte Vereinbarungen.
+**[Best-of-Kundendossier mit vier ausgewählten Prüfbereichen](RHODIUM-GERMANY-BEST-OF-KUNDENNACHWEISE.md)**
 
-**English.** Rhodium Arbeiterbox is designed for verifiable data recovery in archiving, backup verification, forensics and audit. See the [documented recovery results](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md) for matching source and restore checksums and the conditions of each test. Companies will use the functions enabled for their use case through a dedicated Rhodium access point. Automated activation is in preparation.
+- [Historische Datenintegritäts- und Wiederherstellungsergebnisse](benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md)
+- [Prüfstatus, Quellenlage und Grenzen](EVIDENCE-STATUS.md)
+- [Historische Datensätze auf Kaggle](https://www.kaggle.com/datasets/kaikuhnert/rhodium-germany-public-benchmark-evidence) (kein unabhängiges Zertifikat)
 
-**Benchmark-Familien auf einen Blick:** [Zentrale öffentliche Übersicht mit Nachweislinks](BENCHMARK-FAMILIES-OVERVIEW.md). Die Übersicht fasst vorhandene Familien zusammen und trennt dokumentierte Ergebnisse von noch offenen Verifikationen.
+Messwerte gelten nur für die dokumentierten Datensätze und Prüfbedingungen. Die aufgeführten lokalen Ergebnisse ersetzen keine Abnahme unter kundenspezifischen Einsatzbedingungen. Wir geben keine generellen Garantien für Datenreduktion, Latenz oder Ausfallsicherheit.
 
-## Vier dokumentierte Arbeitsfelder
+## Kontakt
 
-| Arbeitsfeld | Vorhandene Grundlage | Aussagegrenze |
-|---|---|---|
-| Datenfluss optimieren | Datenpfade mit gemessenen Eingabe- und Übertragungsmengen | Cold und Warm unterscheiden; Messgrenze und Empfängerzustand berücksichtigen |
-| Wiederherstellung prüfen | Original-/Restore-Prüfwerte; ausgewählte dokumentierte Bytevergleiche | Gespeicherte Berichte und unabhängige Neuberechnung unterscheiden |
-| Technische Aktionen kontrollieren | Lokale Freigabe- und Werkzeugaktions-Abweisungstests | Gilt für den jeweiligen Adapter und Ablauf |
-| Abläufe nachvollziehen | Deterministische Replay-Tests | Keine pauschale Abnahme aller Automatisierungsfunktionen |
+**info@rhodium-germany.tech** · [Rhodium Germany online](https://rhodium-germany.de/pages/rhodium-benchmarks)
 
-## Was öffentlich dokumentiert ist
-
-- **62 Prüfzwecke** und **eine zusätzliche Profilübersicht** im [Einzelregister](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/benchmarks/RHODIUM-ALL-DISTINCT-TESTS.md).
-- **22 Messprofile** im [ergänzenden Evidence-JSON](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/public-evidence/2026-10-15-recovered-evidence.json).
-- **25 Best-of-Datenfälle**, nach Eingabe-SHA-256 unterschieden, in den [Ergebnissen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/benchmarks/RHODIUM-PUBLIC-BENCHMARK-RESULTS-AND-SHA256.md).
-- **29 historische Nachweiseinträge** im [Familienregister](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/benchmarks/RHODIUM-PUBLIC-BENCHMARK-FAMILY.csv).
-
-Registerstand: 15.10.2026. Diese Sammlungen überschneiden sich und werden getrennt gezählt. Historische Testberichte sind keine vollständige unabhängige Produktabnahme. Der vollständige Abschluss aller historischen Originalbestände ist weiterhin offen.
-
-## Beispiel: Übertragungsmenge und Wiederherstellung
-
-Der gespeicherte lokale 64-MiB-Fall dokumentiert **67.108.864 B Eingabe**, **33.869.410 B Cold-Wire** und **5.827 B Warm-Wire**. Der Bericht enthält übereinstimmende Original-/Restore-SHA-256-Werte. Warm nutzt vorhandenen Empfängerzustand.
-
-Beim AGIBOT-Beispielfall mit ebenfalls 67.108.864 B Eingabe stehen **67.018.034 B Cold-Wire** und **5.827 B Warm-Wire**. Die unterschiedlichen Cold-Ergebnisse zeigen, warum der konkrete Datensatz und die Messbedingungen entscheidend sind. Eine universelle Reduktionsrate ist daraus nicht ableitbar.
-
-## Ein Vorgeschmack auf mögliche Anwendungen
-
-| Entwicklungsrichtung | Zu untersuchende Fragestellung |
-|---|---|
-| Archive und wiederkehrende Übertragungen | Welche Übertragungsmenge bleibt einschließlich nötiger Zusatzdaten, und gelingt die Wiederherstellung? |
-| Telemetrie und Sensorik | Lassen sich Datenfluss und nachvollziehbare Verarbeitung verbinden, ohne erforderliche Inhalte zu verlieren? |
-| KI- und API-Abläufe | Können Freigaben und Zielaktionen im konkreten System kontrolliert und nachgewiesen werden? |
-| Software-, Infrastruktur- und Edge-Integration | Welche Anbindung, Ressourcen und Betriebsbedingungen sind erforderlich? |
-
-Diese Richtungen beschreiben Potenziale. Sie sind keine pauschale Zusage für einen bestimmten Betrieb. Diese zusätzlichen Entwicklungsrichtungen sind vom aktuellen Lizenzangebot für Archivierung, Backup-Verifikation sowie Forensik und Audit getrennt.
-
-
-## Lizenzangebot und Gebote
-
-Angeboten werden vertraglich definierte Nutzungs- und Vertriebsrechte an der Arbeiterbox. Einsatzfeld, Märkte, Laufzeit und Vergütung werden vereinbart. Quellcode, Matrix-Interna, Schlüssel und Eigentumsanteile bleiben bei Kai Kuhnert.
-
-Kontakt für Lizenzanfragen und Gebote: **info@rhodium-germany.tech**. Bitte nennen Sie den gewünschten Nutzungsumfang und die vorgesehenen Märkte. Die vorhandenen Nachweise bilden die Grundlage des Angebots; Rhodium bietet keinen zusätzlichen Test- oder Gegentest-Service an.
-
-
-## Öffentliche Nachweise und geschützte Umsetzung
-
-Öffentlich stehen Nutzen, dokumentierte Messwerte und Nachweisgrenzen im Mittelpunkt. Die proprietäre Umsetzung und vertrauliche Daten bleiben geschützt. Die Prüfergebnisse gelten für die jeweils dokumentierten Testbedingungen.
-
-[Prüfstatus](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/EVIDENCE-STATUS.md) · [Veröffentlichungsgrenzen](https://github.com/BlackboxLogicCore/rhodium-kaggle-public-gate/blob/main/PUBLIC-DISCLOSURE-POLICY.md)
-
-## Ergänztes Register externer und großer Prüfungen (02.11.2026)
-
-[Historische externe Runner-, Kaggle-, HTTPS- und 1–8-GiB-Prüfungen](benchmarks/RHODIUM-EXTERNAL-AND-LARGE-TESTS-20261102.md) sind nun zusätzlich mit ihren konkreten Aussagegrenzen verlinkt. Diese Einträge ergänzen die bestehenden Register als **Querverweise**, nicht als neu durchgeführte oder pauschal zusätzlich gezählte Benchmarks. Private Quellberichte und die geschützte Implementierung bleiben außerhalb dieses öffentlichen Repositories.
-
-## Aktuelle technische Nachweise (November 2026)
-
-Ergaenzend zum historischen Register wurden lokal ein vollstaendiger 1.000.000.000-Byte-Streaming-Wiederherstellungscheck mit uebereinstimmender SHA-256-Pruefsumme sowie ein isolierter deterministischer Agentenketten-Test mit 15 Prozessen und 14 Uebergaben beobachtet. Diese neueren Pruefungen sind noch keine unabhaengigen Cloud-Zertifizierungen oder Wettbewerbswertungen. Sie werden bis zur veroeffentlichungsfaehigen Gegenpruefung getrennt vom historischen Register gefuehrt.
-
-Fuer potenzielle Partner stehen Datenintegritaet, Backup-Verifikation, nachvollziehbare Verarbeitung und kontrollierte Schnittstellen im Mittelpunkt. Proprietare Algorithmen, private Boxen, Schluessel und Kundendaten werden nicht veroeffentlicht. Anfragen bitte ausschliesslich schriftlich an die oben genannte Kontaktadresse.
+Dieses Repository ist ein öffentliches Archiv historischer Ergebnisdokumentation, kein Vertrieb von Quellcode, Zugangsschlüsseln oder vertraulichen Kundeninformationen.
