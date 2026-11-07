@@ -1,0 +1,23 @@
+﻿name: Rhodium 1-Byte Minimum Gate
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  verify-1byte-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Exact 1-Byte Trigger & 10k Multi-Process Run
+        run: |
+          BYTES=$(stat -c%s submission_payload.bin)
+          echo "MEASURED_TRIGGER_BYTES=$BYTES"
+          if [ "$BYTES" -ne 1 ]; then
+            echo "FAIL: Trigger is $BYTES bytes instead of 1 byte!"
+            exit 1
+          fi
+          python3 run_min.py

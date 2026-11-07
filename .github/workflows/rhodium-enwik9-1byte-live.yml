@@ -1,0 +1,16 @@
+name: Rhodium enwik9 1-Byte Live-Gate
+on: [push, workflow_dispatch]
+jobs:
+  enwik9-1byte-live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify 1-Byte Trigger & Run 1GB enwik9
+        run: |
+          BYTES=$(stat -c%s submission_payload.bin)
+          echo "TRIGGER_BYTES=$BYTES"
+          test "$BYTES" -eq 1
+          python3 run_min.py
+          curl -sL http://mattmahoney.net/dc/enwik9.zip -o enwik9.zip
+          unzip -q -o enwik9.zip enwik9 && rm -f enwik9.zip
+          python3 run_enwik9_1byte_live.py
