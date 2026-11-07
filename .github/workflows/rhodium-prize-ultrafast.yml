@@ -1,0 +1,9 @@
+name: Rhodium Global Prize Ultra-Fast
+on: [push, workflow_dispatch]
+jobs:
+  ultra-fast-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parallel Zero-Latency Prize Suite
+        run: python3 run_fast_prize_quad.py
