@@ -1,0 +1,29 @@
+name: Rhodium Cross-Runner Failover Gate
+on: [push, workflow_dispatch]
+jobs:
+  failover-gate-node-a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node A - 1-Byte Trigger & Worker Kill Recovery
+        run: |
+          test "$(stat -c%s submission_payload.bin)" -eq 1
+          python3 run_cross_runner_resilience.py > failover_node_a.json
+          cat failover_node_a.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: node-a-proof
+          path: failover_node_a.json
+  failover-gate-node-b:
+    needs: failover-gate-node-a
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: node-a-proof
+      - name: Node B - Cross-Runner Handover & Independent Verification
+        run: |
+          cat failover_node_a.json
+          python3 run_cross_runner_resilience.py > failover_node_b.json
+          cat failover_node_b.json
