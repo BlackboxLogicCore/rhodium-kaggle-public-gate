@@ -1,0 +1,9 @@
+name: Rhodium Kaggle Quad-Gate
+on: [push, workflow_dispatch]
+jobs:
+  quad-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Quad-Gate Test Suite
+        run: python3 run_all_kaggle_tests.py
